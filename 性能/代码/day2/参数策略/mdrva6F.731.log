@@ -1,0 +1,4 @@
+Action.c(49): lruser1	[MsgId: MMSG-17999]
+Action.c(49): Error: Parameter 'lrpwd': No more unique values for this parameter in table 'lruser.dat' [unique range is 1-1]. The Vuser is aborted according to "When Out Of Values" policy.	[MsgId: MERR-13870]
+Action.c(49): lruser2	[MsgId: MMSG-17999]
+Action.c(49): Error: Parameter 'lrpwd': No more unique values for this parameter in table 'lruser.dat' [unique range is 2-2]. The Vuser is aborted according to "When Out Of Values" policy.	[MsgId: MERR-13870]

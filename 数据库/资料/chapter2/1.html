@@ -1,0 +1,883 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Linux平台 | 数据库 MySQL</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../chapter2/2.html" />
+    
+    
+    <link rel="prev" href="../chapter2.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="2.1"
+        data-chapter-title="Linux平台"
+        data-filepath="chapter2/1.md"
+        data-basepath=".."
+        data-revision="Tue Nov 21 2017 08:26:22 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        数据库简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="chapter1.html">
+            
+                
+                    <a href="../chapter1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        基本概念
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="chapter1/1.html">
+            
+                
+                    <a href="../chapter1/1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        数据库是什么
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter1/2.html">
+            
+                
+                    <a href="../chapter1/2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        RDBMS
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="chapter1/3.html">
+            
+                
+                    <a href="../chapter1/3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        SQL
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="chapter1/4.html">
+            
+                
+                    <a href="../chapter1/4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        MySQL
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="chapter2.html">
+            
+                
+                    <a href="../chapter2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        MySQL安装与使用
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="2.1" data-path="chapter2/1.html">
+            
+                
+                    <a href="../chapter2/1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Linux平台
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="chapter2/2.html">
+            
+                
+                    <a href="../chapter2/2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Windows平台
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="chapter2/3.html">
+            
+                
+                    <a href="../chapter2/3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        客户端与服务端搭配场景
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="chapter3.html">
+            
+                
+                    <a href="../chapter3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Navicat使用
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="chapter3/1.html">
+            
+                
+                    <a href="../chapter3/1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        数据库操作
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="chapter3/2.html">
+            
+                
+                    <a href="../chapter3/2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        数据表操作
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="chapter3/3.html">
+            
+                
+                    <a href="../chapter3/3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        数据操作-增删改查
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="chapter3/4.html">
+            
+                
+                    <a href="../chapter3/4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        数据类型与约束
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="chapter3/5.html">
+            
+                
+                    <a href="../chapter3/5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        数据库的备份与恢复
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="chapter4.html">
+            
+                
+                    <a href="../chapter4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        SQL语言
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="chapter4/2.html">
+            
+                
+                    <a href="../chapter4/2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        数据表操作
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="chapter4/3.html">
+            
+                
+                    <a href="../chapter4/3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        数据操作-增删改查
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="chapter4/4.html">
+            
+                
+                    <a href="../chapter4/4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        数据操作-查询
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.3.1" data-path="chapter4/4/1.html">
+            
+                
+                    <a href="../chapter4/4/1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.1.</b>
+                        
+                        条件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.2" data-path="chapter4/4/2.html">
+            
+                
+                    <a href="../chapter4/4/2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.2.</b>
+                        
+                        排序
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.3" data-path="chapter4/4/3.html">
+            
+                
+                    <a href="../chapter4/4/3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.3.</b>
+                        
+                        聚合函数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.4" data-path="chapter4/4/4.html">
+            
+                
+                    <a href="../chapter4/4/4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.4.</b>
+                        
+                        分组
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.5" data-path="chapter4/4/5.html">
+            
+                
+                    <a href="../chapter4/4/5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.5.</b>
+                        
+                        分页
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.6" data-path="chapter4/4/6.html">
+            
+                
+                    <a href="../chapter4/4/6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.6.</b>
+                        
+                        连接查询
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.7" data-path="chapter4/4/7.html">
+            
+                
+                    <a href="../chapter4/4/7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.7.</b>
+                        
+                        自关联
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.8" data-path="chapter4/4/8.html">
+            
+                
+                    <a href="../chapter4/4/8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.8.</b>
+                        
+                        子查询
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.9" data-path="chapter4/4/9.html">
+            
+                
+                    <a href="../chapter4/4/9.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.9.</b>
+                        
+                        查询演练
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="chapter5.html">
+            
+                
+                    <a href="../chapter5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        高级
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="chapter5/6.html">
+            
+                
+                    <a href="../chapter5/6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        数据库设计
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="chapter5/7.html">
+            
+                
+                    <a href="../chapter5/7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        命令行客户端
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="chapter5/1.html">
+            
+                
+                    <a href="../chapter5/1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        函数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="chapter5/2.html">
+            
+                
+                    <a href="../chapter5/2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        存储过程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="chapter5/3.html">
+            
+                
+                    <a href="../chapter5/3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        视图
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="chapter5/4.html">
+            
+                
+                    <a href="../chapter5/4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        事务
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.6.1" data-path="chapter5/4/1.html">
+            
+                
+                    <a href="../chapter5/4/1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.1.</b>
+                        
+                        提交
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6.2" data-path="chapter5/4/2.html">
+            
+                
+                    <a href="../chapter5/4/2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.2.</b>
+                        
+                        回滚
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="chapter5/5.html">
+            
+                
+                    <a href="../chapter5/5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        索引
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="chapter5/wai-jian.html">
+            
+                
+                    <a href="../chapter5/wai-jian.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        外键
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="chapter5/yong-hu-mi-ma.html">
+            
+                
+                    <a href="../chapter5/yong-hu-mi-ma.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.9.</b>
+                        
+                        用户密码
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >数据库 MySQL</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x5B89;&#x88C5;">&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x5B89;&#x88C5; </h1>
+<ul>
+<li>&#x5F53;&#x524D;&#x4F7F;&#x7528;&#x7684;Centos&#x955C;&#x50CF;&#x4E2D;&#x5DF2;&#x7ECF;&#x5B89;&#x88C5;&#x597D;&#x4E86;MySQL&#x670D;&#x52A1;&#x5668;&#x7AEF;&#xFF0C;&#x65E0;&#x9700;&#x518D;&#x5B89;&#x88C5;&#xFF0C;&#x5E76;&#x4E14;&#x8BBE;&#x7F6E;&#x6210;&#x4E86;&#x5F00;&#x673A;&#x81EA;&#x542F;&#x52A8;</li>
+<li>&#x670D;&#x52A1;&#x7AEF;&#x7528;&#x4E8E;&#x63A5;&#x6536;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x8BF7;&#x6C42;&#x3001;&#x6267;&#x884C;sql&#x8BED;&#x53E5;</li>
+<li>&#x542F;&#x52A8;&#x670D;&#x52A1;(&#x9700;&#x8981;root&#x6743;&#x9650;)</li>
+</ul>
+<pre><code>su
+&#x8F93;&#x5165;root&#x5BC6;&#x7801;
+service mysqld start
+</code></pre><ul>
+<li>&#x67E5;&#x770B;&#x8FDB;&#x7A0B;&#x4E2D;&#x662F;&#x5426;&#x5B58;&#x5728;mysql&#x670D;&#x52A1;</li>
+</ul>
+<pre><code>ps ajx|grep mysql
+</code></pre><p><img src="../assets/59.png" alt=""></p>
+<ul>
+<li>&#x505C;&#x6B62;&#x670D;&#x52A1;(&#x9700;&#x8981;root&#x6743;&#x9650;)</li>
+</ul>
+<pre><code>su
+&#x8F93;&#x5165;root&#x5BC6;&#x7801;
+service mysqld stop
+</code></pre><ul>
+<li>&#x91CD;&#x542F;&#x670D;&#x52A1;(&#x9700;&#x8981;root&#x6743;&#x9650;)</li>
+</ul>
+<pre><code>su
+&#x8F93;&#x5165;root&#x5BC6;&#x7801;
+service mysqld restart
+</code></pre><h3 id="&#x914D;&#x7F6E;">&#x914D;&#x7F6E; </h3>
+<ul>
+<li>&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4F4D;&#x7F6E;&#x4E3A;/data/server/mysql/my.cnf</li>
+</ul>
+<h1 id="&#x5BA2;&#x6237;&#x7AEF;">&#x5BA2;&#x6237;&#x7AEF; </h1>
+<ul>
+<li>&#x5E38;&#x7528;&#x7684;&#x6709;&#x56FE;&#x5F62;&#x5316;&#x754C;&#x9762;&#x5BA2;&#x6237;&#x7AEF;(navicat)&#x3001;&#x547D;&#x4EE4;&#x884C;&#x5BA2;&#x6237;&#x7AEF;</li>
+</ul>
+<h4 id="&#x56FE;&#x5F62;&#x5316;&#x754C;&#x9762;&#x5BA2;&#x6237;&#x7AEF;navicat">&#x56FE;&#x5F62;&#x5316;&#x754C;&#x9762;&#x5BA2;&#x6237;&#x7AEF;navicat </h4>
+<ul>
+<li>&#x53EF;&#x4EE5;&#x5230;<a href="https://www.navicat.com.cn/" target="_blank">Navicat&#x5B98;&#x7F51;</a>&#x4E0B;&#x8F7D;</li>
+<li>&#x5C06;&#x538B;&#x7F29;&#x6587;&#x4EF6;&#x62F7;&#x8D1D;&#x5230;Centos&#x865A;&#x62DF;&#x673A;&#x4E2D;&#xFF0C;&#x653E;&#x5230;&#x684C;&#x9762;&#x4E0A;&#xFF0C;&#x89E3;&#x538B;</li>
+<li>&#x8FDB;&#x5165;&#x89E3;&#x538B;&#x7684;&#x76EE;&#x5F55;&#xFF0C;&#x8FD0;&#x884C;navicat&#xFF0C;&#x547D;&#x4EE4;&#x5982;&#x4E0B;</li>
+</ul>
+<pre><code>cd /home/admin/Desktop/navicat112_mysql_cs_x64
+./start_navicat
+</code></pre><ul>
+<li>&#x542F;&#x52A8;&#x540E;&#x5982;&#x4E0B;&#x56FE;</li>
+</ul>
+<p><img src="../assets/12.png" alt=""></p>
+<ul>
+<li>&#x70B9;&#x51FB;&#x4E24;&#x6B21;&#x201C;&#x53D6;&#x6D88;&#x201D;&#x6309;&#x94AE;&#x540E;&#x5982;&#x4E0B;&#x56FE;</li>
+</ul>
+<p><img src="../assets/13.png" alt=""></p>
+<ul>
+<li>&#x70B9;&#x51FB;&#x201C;&#x8BD5;&#x7528;&#x201D;&#x6309;&#x94AE;&#x540E;&#x5982;&#x4E0B;&#x56FE;</li>
+</ul>
+<p><img src="../assets/14.png" alt=""></p>
+<ul>
+<li>&#x95EE;&#x9898;&#xFF1A;&#x8BD5;&#x7528;&#x671F;&#x5230;&#x671F;</li>
+<li>&#x89E3;&#x51B3;&#xFF1A;&#x5220;&#x9664;&#x7528;&#x6237;&#x76EE;&#x5F55;&#x4E0B;&#x7684;.navicat64&#x76EE;&#x5F55;</li>
+</ul>
+<pre><code>cd ~
+rm -r .navicat64
+</code></pre><h4 id="&#x547D;&#x4EE4;&#x884C;&#x5BA2;&#x6237;&#x7AEF;">&#x547D;&#x4EE4;&#x884C;&#x5BA2;&#x6237;&#x7AEF; </h4>
+<ul>
+<li><p>&#x5F53;&#x524D;&#x4F7F;&#x7528;&#x7684;Centos&#x955C;&#x50CF;&#x4E2D;&#x5DF2;&#x7ECF;&#x5B89;&#x88C5;&#x597D;&#x4E86;MySQL&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x65E0;&#x9700;&#x518D;&#x5B89;&#x88C5;</p>
+</li>
+<li><p>&#x6700;&#x57FA;&#x672C;&#x7684;&#x8FDE;&#x63A5;&#x547D;&#x4EE4;&#x5982;&#x4E0B;&#xFF0C;&#x8F93;&#x5165;&#x540E;&#x56DE;&#x8F66;</p>
+</li>
+</ul>
+<pre><code>mysql -u root
+</code></pre><ul>
+<li>&#x8FDE;&#x63A5;&#x6210;&#x529F;&#x540E;&#x63D0;&#x793A;&#x5982;&#x4E0B;&#x56FE;</li>
+</ul>
+<p><img src="../assets/60.png" alt=""></p>
+<ul>
+<li>&#x6309;ctrl+d&#x6216;&#x8F93;&#x5165;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#x9000;&#x51FA;</li>
+</ul>
+<pre><code>quit &#x6216;&#x8005; exit
+</code></pre>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../chapter2.html" class="navigation navigation-prev " aria-label="Previous page: MySQL安装与使用"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../chapter2/2.html" class="navigation navigation-next " aria-label="Next page: Windows平台"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

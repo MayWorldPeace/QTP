@@ -1,0 +1,594 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>iwebshop</title>
+<link rel="stylesheet" href="/iwebshop/views/default/skin/default/css/index.css" />
+<script type='text/javascript' src="/iwebshop/views/default/javascript/common.js"></script>
+<script charset="UTF-8" src="/iwebshop/runtime/systemjs/jquery-1.4.4.min.js"></script>
+<script charset="UTF-8" src="/iwebshop/runtime/systemjs/form.js"></script>
+<script charset="UTF-8" src="/iwebshop/runtime/systemjs/artdialog/artDialog.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/iwebshop/runtime/systemjs/autovalidate/style.css"/><script charset="UTF-8" src="/iwebshop/runtime/systemjs/autovalidate/validate.js"></script>
+</head>
+<body class="index">
+<div class="ucenter container">
+	<div class="header">
+		<h1 class="logo"><a title="iwebshop" style="background:url(/iwebshop/image/logo.gif);" href="/iwebshop/">iwebshop</a></h1>
+		<ul class="shortcut">
+			<li class="first"><a href="/iwebshop/index.php?controller=ucenter">我的账户</a></li><li><a href="/iwebshop/index.php?controller=ucenter&action=order">我的订单</a></li><li class='last'><a href="/iwebshop/index.php?controller=site&action=help_list">使用帮助</a></li>
+		</ul>
+				<p class="loginfo">zhangyuqi您好，欢迎您来到iwebshop购物！[<a class='reg' href="/iwebshop/index.php?controller=simple&action=logout">安全退出</a>]</p>
+	</div>
+	<div class="navbar">
+		<ul>
+			<li><a href="/iwebshop/">首页</a></li>
+					</ul>
+		<div class="mycart">
+			<dl>
+				<dt><a href="/iwebshop/index.php?controller=simple&action=cart">购物车<b name="mycart_count">0</b>件</a></dt>
+				<dd><a href="/iwebshop/index.php?controller=simple&action=cart">去结算</a></dd>
+			</dl>
+
+			<!--购物车浮动div 开始-->
+			<div class="shopping" id='div_mycart' style='display:none;'>
+			</div>
+			<!--购物车浮动div 结束-->
+
+		</div>
+	</div>
+
+	<div class="searchbar">
+		<div class="allsort">
+			<a href="javascript:void();">全部商品分类</a>
+
+			<!--总的商品分类-开始-->
+			<ul class="sortlist" id='div_allsort' style='display:none'>
+													<li>
+						<h2><a href="/iwebshop/index.php?controller=site&action=pro_list&cat=57">服饰鞋帽</a></h2>
+
+						<!--商品分类 浮动div 开始-->
+						<div class="sublist" style='display:none'>
+
+							<div class="items">
+								<strong>选择分类</strong>
+																								<dl class="category selected">
+									<dt>
+										<a href="/iwebshop/index.php?controller=site&action=pro_list&cat=64">运动装</a>
+									</dt>
+
+									<dd>
+																																							</dd>
+								</dl>
+																<dl class="category selected">
+									<dt>
+										<a href="/iwebshop/index.php?controller=site&action=pro_list&cat=59">女装</a>
+									</dt>
+
+									<dd>
+																														<a href="/iwebshop/index.php?controller=site&action=pro_list&cat=81">连衣裙</a>|
+																				<a href="/iwebshop/index.php?controller=site&action=pro_list&cat=97">衬衫</a>|
+																													</dd>
+								</dl>
+																<dl class="category selected">
+									<dt>
+										<a href="/iwebshop/index.php?controller=site&action=pro_list&cat=58">男装</a>
+									</dt>
+
+									<dd>
+																														<a href="/iwebshop/index.php?controller=site&action=pro_list&cat=63">裤子</a>|
+																				<a href="/iwebshop/index.php?controller=site&action=pro_list&cat=61">T恤</a>|
+																				<a href="/iwebshop/index.php?controller=site&action=pro_list&cat=60">衬衫</a>|
+																													</dd>
+								</dl>
+																
+							</div>
+
+						</div>
+						<!--商品分类 浮动div 结束-->
+
+					</li>
+									<li>
+						<h2><a href="/iwebshop/index.php?controller=site&action=pro_list&cat=67">化妆品</a></h2>
+
+						<!--商品分类 浮动div 开始-->
+						<div class="sublist" style='display:none'>
+
+							<div class="items">
+								<strong>选择分类</strong>
+																								<dl class="category selected">
+									<dt>
+										<a href="/iwebshop/index.php?controller=site&action=pro_list&cat=78">香水SPA</a>
+									</dt>
+
+									<dd>
+																																							</dd>
+								</dl>
+																<dl class="category selected">
+									<dt>
+										<a href="/iwebshop/index.php?controller=site&action=pro_list&cat=77">身体护理</a>
+									</dt>
+
+									<dd>
+																														<a href="/iwebshop/index.php?controller=site&action=pro_list&cat=94">纤体</a>|
+																				<a href="/iwebshop/index.php?controller=site&action=pro_list&cat=93">沐浴</a>|
+																				<a href="/iwebshop/index.php?controller=site&action=pro_list&cat=92">润肤霜（身体）</a>|
+																													</dd>
+								</dl>
+																<dl class="category selected">
+									<dt>
+										<a href="/iwebshop/index.php?controller=site&action=pro_list&cat=76">面部护理</a>
+									</dt>
+
+									<dd>
+																														<a href="/iwebshop/index.php?controller=site&action=pro_list&cat=90">护肤</a>|
+																				<a href="/iwebshop/index.php?controller=site&action=pro_list&cat=91">面膜</a>|
+																				<a href="/iwebshop/index.php?controller=site&action=pro_list&cat=89">洁肤类</a>|
+																													</dd>
+								</dl>
+																
+							</div>
+
+						</div>
+						<!--商品分类 浮动div 结束-->
+
+					</li>
+									<li>
+						<h2><a href="/iwebshop/index.php?controller=site&action=pro_list&cat=68">家居、家装</a></h2>
+
+						<!--商品分类 浮动div 开始-->
+						<div class="sublist" style='display:none'>
+
+							<div class="items">
+								<strong>选择分类</strong>
+																								<dl class="category selected">
+									<dt>
+										<a href="/iwebshop/index.php?controller=site&action=pro_list&cat=73">厨房用具</a>
+									</dt>
+
+									<dd>
+																																							</dd>
+								</dl>
+																<dl class="category selected">
+									<dt>
+										<a href="/iwebshop/index.php?controller=site&action=pro_list&cat=74">家纺</a>
+									</dt>
+
+									<dd>
+																														<a href="/iwebshop/index.php?controller=site&action=pro_list&cat=104">窗帘</a>|
+																													</dd>
+								</dl>
+																<dl class="category selected">
+									<dt>
+										<a href="/iwebshop/index.php?controller=site&action=pro_list&cat=75">灯具</a>
+									</dt>
+
+									<dd>
+																														<a href="/iwebshop/index.php?controller=site&action=pro_list&cat=99">吸顶灯</a>|
+																				<a href="/iwebshop/index.php?controller=site&action=pro_list&cat=101">吊灯、花灯</a>|
+																													</dd>
+								</dl>
+																
+							</div>
+
+						</div>
+						<!--商品分类 浮动div 结束-->
+
+					</li>
+									<li>
+						<h2><a href="/iwebshop/index.php?controller=site&action=pro_list&cat=66">电脑、手机、数码</a></h2>
+
+						<!--商品分类 浮动div 开始-->
+						<div class="sublist" style='display:none'>
+
+							<div class="items">
+								<strong>选择分类</strong>
+																								<dl class="category selected">
+									<dt>
+										<a href="/iwebshop/index.php?controller=site&action=pro_list&cat=72">相机</a>
+									</dt>
+
+									<dd>
+																														<a href="/iwebshop/index.php?controller=site&action=pro_list&cat=86">单反相机</a>|
+																				<a href="/iwebshop/index.php?controller=site&action=pro_list&cat=85">卡片相机</a>|
+																													</dd>
+								</dl>
+																<dl class="category selected">
+									<dt>
+										<a href="/iwebshop/index.php?controller=site&action=pro_list&cat=71">手机</a>
+									</dt>
+
+									<dd>
+																														<a href="/iwebshop/index.php?controller=site&action=pro_list&cat=84">手机卡</a>|
+																				<a href="/iwebshop/index.php?controller=site&action=pro_list&cat=82">手机</a>|
+																				<a href="/iwebshop/index.php?controller=site&action=pro_list&cat=83">手机配件</a>|
+																													</dd>
+								</dl>
+																<dl class="category selected">
+									<dt>
+										<a href="/iwebshop/index.php?controller=site&action=pro_list&cat=70">电脑</a>
+									</dt>
+
+									<dd>
+																														<a href="/iwebshop/index.php?controller=site&action=pro_list&cat=88">平板电脑</a>|
+																				<a href="/iwebshop/index.php?controller=site&action=pro_list&cat=87">笔记本</a>|
+																													</dd>
+								</dl>
+																
+							</div>
+
+						</div>
+						<!--商品分类 浮动div 结束-->
+
+					</li>
+									<li>
+						<h2><a href="/iwebshop/index.php?controller=site&action=pro_list&cat=69">图书、音像</a></h2>
+
+						<!--商品分类 浮动div 开始-->
+						<div class="sublist" style='display:none'>
+
+							<div class="items">
+								<strong>选择分类</strong>
+																								<dl class="category selected">
+									<dt>
+										<a href="/iwebshop/index.php?controller=site&action=pro_list&cat=98">图书</a>
+									</dt>
+
+									<dd>
+																																							</dd>
+								</dl>
+																<dl class="category selected">
+									<dt>
+										<a href="/iwebshop/index.php?controller=site&action=pro_list&cat=79">音像</a>
+									</dt>
+
+									<dd>
+																														<a href="/iwebshop/index.php?controller=site&action=pro_list&cat=103">电视剧</a>|
+																				<a href="/iwebshop/index.php?controller=site&action=pro_list&cat=102">电影</a>|
+																				<a href="/iwebshop/index.php?controller=site&action=pro_list&cat=100">音乐</a>|
+																													</dd>
+								</dl>
+																
+							</div>
+
+						</div>
+						<!--商品分类 浮动div 结束-->
+
+					</li>
+				
+			</ul>
+			<!--总的商品分类-结束-->
+
+		</div>
+
+		<div class="searchbox">
+			<form action='/iwebshop/index.php?controller=site&action=search_list' method='get'>
+								<input class="text" type="text" name='word' autocomplete="off" value="输入关键字..." />
+				<input class="btn" type="submit" value="商品搜索" onclick="checkInput('word','输入关键字...');" />
+			</form>
+
+			<!--自动完成div 开始-->
+			<ul class="auto_list" style='display:none'></ul>
+			<!--自动完成div 开始-->
+
+		</div>
+		<div class="hotwords">热门搜索：
+									<a href="/iwebshop/index.php?controller=site&action=search_list&word=ipad">ipad</a>
+									<a href="/iwebshop/index.php?controller=site&action=search_list&word=%E8%BF%9E%E8%A1%A3%E8%A3%99">连衣裙</a>
+									<a href="/iwebshop/index.php?controller=site&action=search_list&word=%E7%AC%94%E8%AE%B0%E6%9C%AC">笔记本</a>
+									<a href="/iwebshop/index.php?controller=site&action=search_list&word=%E5%8D%95%E5%8F%8D">单反</a>
+									<a href="/iwebshop/index.php?controller=site&action=search_list&word=%E8%8B%B9%E6%9E%9C">苹果</a>
+					</div>
+	</div>
+
+	<div class="position">
+		您当前的位置： <a href="/iwebshop/">首页</a>&nbsp;&gt;&nbsp;我的账户
+	</div>
+	<div class="wrapper clearfix">
+		<div class="sidebar f_l">
+			<img src="/iwebshop/views/default/skin/default/images/front/ucenter/ucenter.gif" width="180" height="40" />
+			<div class="box">
+				<div class="title"><h2>交易记录</h2></div>
+				<div class="cont">
+					<ul class="list">
+						<li><a href="/iwebshop/index.php?controller=ucenter&action=order">我的订单</a></li>
+						<li><a href="/iwebshop/index.php?controller=ucenter&action=integral">我的积分</a></li>
+						<li><a href="/iwebshop/index.php?controller=ucenter&action=redpacket">我的代金券</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="box">
+				<div class="title"><h2 class='bg2'>服务中心</h2></div>
+				<div class="cont">
+					<ul class="list">
+						<li><a href="/iwebshop/index.php?controller=ucenter&action=refunds">退款申请</a></li>
+						<li><a href="/iwebshop/index.php?controller=ucenter&action=complain">站点建议</a></li>
+						<li><a href="/iwebshop/index.php?controller=ucenter&action=consult">商品咨询</a></li>
+						<li><a href="/iwebshop/index.php?controller=ucenter&action=evaluation">商品评价</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="box">
+				<div class="title"><h2 class='bg3'>应用</h2></div>
+				<div class="cont">
+					<ul class="list">
+						<li><a href="/iwebshop/index.php?controller=ucenter&action=message">短信息</a></li>
+						<li><a href="/iwebshop/index.php?controller=ucenter&action=favorite">收藏夹</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="box">
+				<div class="title"><h2 class='bg4'>账户资金</h2></div>
+				<div class="cont">
+					<ul class="list">
+						<li><a href="/iwebshop/index.php?controller=ucenter&action=account_log">帐户余额</a></li>
+						<li><a href="/iwebshop/index.php?controller=ucenter&action=online_recharge">在线充值</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="box">
+				<div class="title"><h2 class='bg5'>个人设置</h2></div>
+				<div class="cont">
+					<ul class="list">
+						<li><a href="/iwebshop/index.php?controller=ucenter&action=address">地址管理</a></li>
+						<li><a href="/iwebshop/index.php?controller=ucenter&action=info">个人资料</a></li>
+						<li><a href="/iwebshop/index.php?controller=ucenter&action=password">修改密码</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="main f_r">
+
+	            
+	<div class="userinfo_bar"><span class="f_r">上一次登录时间：2018-01-15 16:14:05</span><b class="f14">您好，zhangyuqi 欢迎回来!</b></div>
+	<div class="box clearfix">
+		<h3>用户信息</h3>
+		<dl class="userinfo_box">
+			<dt>
+						<a class="ico"><img id="user_ico_img" src="/iwebshop/" width="100" height="100" alt="" onerror="this.src='/iwebshop/views/default/skin/default/images/front/user_ico.gif'" /></a>
+			<a class="blue" href="javascript:select_ico();">修改头像</a>
+			</dt>
+			<dd>
+			<table width="100%" cellpadding="0" cellspacing="0">
+				<col width="192px" />
+				<col width="120px" />
+				<col width="192px" />
+				<col />
+				<tr>
+					<td>你的账户目前总积分：<b class="red2">0</b></td>
+					<td><a class="blue" href="/iwebshop/index.php?controller=ucenter&action=integral">查看积分历史</a></td>
+															<td>你的订单交易总数量：<b class="red2">0</b> 笔</td>
+					<td><a class="blue" href="/iwebshop/index.php?controller=ucenter&action=order">进入订单列表</a></td>
+				</tr>
+				<tr>
+
+					<td>总消费额：<b>￥</b><b class="red2">0</b></td>
+					<td></td>
+					<td>预存款余额：<b>￥</b><b class="red2">0.00</b></td>
+				</tr>
+				<tr>
+																				<td>代金券：拥有可用代金券 <b class="red2">0</b> 张</td>
+					<td></td>
+				</tr>
+			</table>
+			<div class="stat">
+												<span>待评价商品：<label>(<b class="red2">0</b>)</label></span>
+												<span>待付款订单：<label>(<b class="red2">0</b>)</label></span>
+												<span>待确认收货：<label>(<b class="red2"><a href="/iwebshop/index.php?controller=ucenter&action=order">0</b>)</a></label></span>
+			</div>
+			</dd>
+		</dl>
+	</div>
+	<h3 class="bg">我的订单</h3>
+	<div class="box m_10">
+		<table class="list_table" width="100%" cellpadding="0" cellspacing="0">
+			<tr>
+				<th>订单编号</th><th>下单日期</th><th>收货人</th><th>支付方式</th><th>总金额</th><th>订单状态</th>
+			</tr>
+
+			
+			<tfoot><tr><td colspan="6" class="t_r"><a class="blue" href="/iwebshop/index.php?controller=ucenter&action=order">更多订单&gt;&gt;</a></td></tr></tfoot>
+		</table>
+	</div>
+	<div class="box">
+		<div class="title"><h2>也许你会对下列商品感兴趣</h2></div>
+		<div class="cont clearfix">
+			<ul class="prolist f_l">
+								<li>
+				<a href="/iwebshop/index.php?controller=site&action=products&id=94" target="_black"><img src="/iwebshop/upload/2011/05/27/20110527101931485_175_175.jpg" alt="苹果（Apple）iPad 2 MC916CH/A 9.7英寸平板电脑 （16G WIFI版）" height="100" width="100"></a>
+				<p class="pro_title"><a href="/iwebshop/index.php?controller=site&action=products&id=94" target='_black'>苹果（Apple）iPad 2 MC916CH/A 9.7英寸平板电脑 （16G WIFI版）</a></p>
+				<p class="price_new"><b>￥3999.00</b></p>
+				</li>
+								<li>
+				<a href="/iwebshop/index.php?controller=site&action=products&id=95" target="_black"><img src="/iwebshop/upload/2011/05/27/20110527095041824_175_175.jpg" alt="索尼（SONY）VPCSD18EC/P 13.3英寸宽屏笔记本电脑（i5-2410M 2G 320G" height="100" width="100"></a>
+				<p class="pro_title"><a href="/iwebshop/index.php?controller=site&action=products&id=95" target='_black'>索尼（SONY）VPCSD18EC/P 13.3英寸宽屏笔记本电脑（i5-2410M 2G 320G</a></p>
+				<p class="price_new"><b>￥7699.00</b></p>
+				</li>
+								<li>
+				<a href="/iwebshop/index.php?controller=site&action=products&id=93" target="_black"><img src="/iwebshop/upload/2011/05/27/20110527101512867_175_175.jpg" alt="联想（Lenovo）Y470N-IFI 14.0英寸笔记本电脑（i5-2410M 4G 640G 2" height="100" width="100"></a>
+				<p class="pro_title"><a href="/iwebshop/index.php?controller=site&action=products&id=93" target='_black'>联想（Lenovo）Y470N-IFI 14.0英寸笔记本电脑（i5-2410M 4G 640G 2</a></p>
+				<p class="price_new"><b>￥5999.00</b></p>
+				</li>
+								<li>
+				<a href="/iwebshop/index.php?controller=site&action=products&id=126" target="_black"><img src="/iwebshop/upload/2011/05/27/20110527025357602_175_175.png" alt="嘎嘎小姐：超人气冠军特典（CD）" height="100" width="100"></a>
+				<p class="pro_title"><a href="/iwebshop/index.php?controller=site&action=products&id=126" target='_black'>嘎嘎小姐：超人气冠军特典（CD）</a></p>
+				<p class="price_new"><b>￥23.50</b></p>
+				</li>
+								<li>
+				<a href="/iwebshop/index.php?controller=site&action=products&id=132" target="_black"><img src="/iwebshop/upload/2011/05/27/20110527033023491_175_175.png" alt="福尔摩斯侦探电影集" height="100" width="100"></a>
+				<p class="pro_title"><a href="/iwebshop/index.php?controller=site&action=products&id=132" target='_black'>福尔摩斯侦探电影集</a></p>
+				<p class="price_new"><b>￥48.80</b></p>
+				</li>
+								<li>
+				<a href="/iwebshop/index.php?controller=site&action=products&id=77" target="_black"><img src="/iwebshop/upload/2011/05/26/20110526020153653_175_175.jpg" alt="iphone 4代 (32G) 苹果iphone 4大陆行货带发票全国联保" height="100" width="100"></a>
+				<p class="pro_title"><a href="/iwebshop/index.php?controller=site&action=products&id=77" target='_black'>iphone 4代 (32G) 苹果iphone 4大陆行货带发票全国联保</a></p>
+				<p class="price_new"><b>￥4799.00</b></p>
+				</li>
+								<li>
+				<a href="/iwebshop/index.php?controller=site&action=products&id=79" target="_black"><img src="/iwebshop/upload/2011/05/26/20110526022525607_175_175.jpg" alt="摩托罗拉 Defy me525 正品行货 机打发票 送硅胶套" height="100" width="100"></a>
+				<p class="pro_title"><a href="/iwebshop/index.php?controller=site&action=products&id=79" target='_black'>摩托罗拉 Defy me525 正品行货 机打发票 送硅胶套</a></p>
+				<p class="price_new"><b>￥2359.00</b></p>
+				</li>
+								<li>
+				<a href="/iwebshop/index.php?controller=site&action=products&id=125" target="_black"><img src="/iwebshop/upload/2011/05/27/20110527024759294_175_175.png" alt="艾薇儿：酷到骨子里（CD）" height="100" width="100"></a>
+				<p class="pro_title"><a href="/iwebshop/index.php?controller=site&action=products&id=125" target='_black'>艾薇儿：酷到骨子里（CD）</a></p>
+				<p class="price_new"><b>￥13.50</b></p>
+				</li>
+								<li>
+				<a href="/iwebshop/index.php?controller=site&action=products&id=88" target="_black"><img src="/iwebshop/upload/2011/05/26/20110526050034797_175_175.jpg" alt="佳能 Canon/佳能ixus105is 数码相机 全国联保 正品行货" height="100" width="100"></a>
+				<p class="pro_title"><a href="/iwebshop/index.php?controller=site&action=products&id=88" target='_black'>佳能 Canon/佳能ixus105is 数码相机 全国联保 正品行货</a></p>
+				<p class="price_new"><b>￥1199.00</b></p>
+				</li>
+								<li>
+				<a href="/iwebshop/index.php?controller=site&action=products&id=90" target="_black"><img src="/iwebshop/upload/2011/05/26/20110526051016735_175_175.jpg" alt="佳能单反数码相机EOS 550D/18-55套机 佳能550D 正品" height="100" width="100"></a>
+				<p class="pro_title"><a href="/iwebshop/index.php?controller=site&action=products&id=90" target='_black'>佳能单反数码相机EOS 550D/18-55套机 佳能550D 正品</a></p>
+				<p class="price_new"><b>￥4899.00</b></p>
+				</li>
+								<li>
+				<a href="/iwebshop/index.php?controller=site&action=products&id=106" target="_black"><img src="/iwebshop/upload/2011/05/27/20110527115206152_175_175.jpg" alt="JackJones杰克琼斯略宽松腿部合体直筒牛仔裤(蓝)" height="100" width="100"></a>
+				<p class="pro_title"><a href="/iwebshop/index.php?controller=site&action=products&id=106" target='_black'>JackJones杰克琼斯略宽松腿部合体直筒牛仔裤(蓝)</a></p>
+				<p class="price_new"><b>￥245.00</b></p>
+				</li>
+								<li>
+				<a href="/iwebshop/index.php?controller=site&action=products&id=108" target="_black"><img src="/iwebshop/upload/2011/05/27/20110527115754255_175_175.jpg" alt="专柜正品Lee2011 夏季新款 砂洗男款直筒牛仔裤五分短裤" height="100" width="100"></a>
+				<p class="pro_title"><a href="/iwebshop/index.php?controller=site&action=products&id=108" target='_black'>专柜正品Lee2011 夏季新款 砂洗男款直筒牛仔裤五分短裤</a></p>
+				<p class="price_new"><b>￥239.00</b></p>
+				</li>
+							</ul>
+		</div>
+	</div>
+</div>
+<script type='text/javascript'>
+	//修改头像
+function select_ico()
+{
+	art.dialog.open('/iwebshop/index.php?controller=block&action=user_ico',{id:'user_ico',title:'设置头像'});
+}
+
+//头像上传回调函数
+function callback_user_ico(content)
+{
+	var content = eval(content);
+	if(content.isError == true)
+	{
+		alert(content.message);
+	}
+	else
+	{
+		$('#user_ico_img').attr('src',content.data);
+	}
+	art.dialog({id:'user_ico'}).close();
+}
+</script>
+
+	</div>
+
+
+	<div class="help m_10">
+		<div class="cont clearfix">
+																																														
+						<dl style="width:19%">
+     			<dt><a href="/iwebshop/index.php?controller=site&action=help_list&id=3">购物指南</a></dt>
+     								<dd><a href="/iwebshop/index.php?controller=site&action=help&id=29">订单状态</a></dd>
+									<dd><a href="/iwebshop/index.php?controller=site&action=help&id=28">交易条款</a></dd>
+									<dd><a href="/iwebshop/index.php?controller=site&action=help&id=27">积分说明</a></dd>
+									<dd><a href="/iwebshop/index.php?controller=site&action=help&id=26">会员制度</a></dd>
+									<dd><a href="/iwebshop/index.php?controller=site&action=help&id=4">购物流程</a></dd>
+				      		</dl>
+      					<dl style="width:19%">
+     			<dt><a href="/iwebshop/index.php?controller=site&action=help_list&id=4">支付帮助</a></dt>
+     								<dd><a href="/iwebshop/index.php?controller=site&action=help&id=53">支付帮助</a></dd>
+									<dd><a href="/iwebshop/index.php?controller=site&action=help&id=33">余额支付</a></dd>
+									<dd><a href="/iwebshop/index.php?controller=site&action=help&id=32">银行电汇</a></dd>
+									<dd><a href="/iwebshop/index.php?controller=site&action=help&id=31">在线支付</a></dd>
+									<dd><a href="/iwebshop/index.php?controller=site&action=help&id=30">货到付款</a></dd>
+				      		</dl>
+      					<dl style="width:19%">
+     			<dt><a href="/iwebshop/index.php?controller=site&action=help_list&id=6">配送帮助</a></dt>
+     								<dd><a href="/iwebshop/index.php?controller=site&action=help&id=38">EMS/邮政普包</a></dd>
+									<dd><a href="/iwebshop/index.php?controller=site&action=help&id=37">商品验货与签收</a></dd>
+									<dd><a href="/iwebshop/index.php?controller=site&action=help&id=36">加急快递</a></dd>
+									<dd><a href="/iwebshop/index.php?controller=site&action=help&id=35">上门自提</a></dd>
+									<dd><a href="/iwebshop/index.php?controller=site&action=help&id=34">配送范围及运费</a></dd>
+				      		</dl>
+      					<dl style="width:19%">
+     			<dt><a href="/iwebshop/index.php?controller=site&action=help_list&id=5">售后服务</a></dt>
+     								<dd><a href="/iwebshop/index.php?controller=site&action=help&id=52">售后服务</a></dd>
+									<dd><a href="/iwebshop/index.php?controller=site&action=help&id=43">发票制度</a></dd>
+									<dd><a href="/iwebshop/index.php?controller=site&action=help&id=42">余额的使用与提现</a></dd>
+									<dd><a href="/iwebshop/index.php?controller=site&action=help&id=41">退/换货注意事项</a></dd>
+									<dd><a href="/iwebshop/index.php?controller=site&action=help&id=40">退货说明</a></dd>
+									<dd><a href="/iwebshop/index.php?controller=site&action=help&id=39">换货说明</a></dd>
+				      		</dl>
+      					<dl style="width:19%">
+     			<dt><a href="/iwebshop/index.php?controller=site&action=help_list&id=7">帮助信息</a></dt>
+     								<dd><a href="/iwebshop/index.php?controller=site&action=help&id=50">友情链接</a></dd>
+									<dd><a href="/iwebshop/index.php?controller=site&action=help&id=49">诚聘英才</a></dd>
+									<dd><a href="/iwebshop/index.php?controller=site&action=help&id=48">联系客服</a></dd>
+									<dd><a href="/iwebshop/index.php?controller=site&action=help&id=47">退订邮件/短信</a></dd>
+									<dd><a href="/iwebshop/index.php?controller=site&action=help&id=46">找回密码</a></dd>
+									<dd><a href="/iwebshop/index.php?controller=site&action=help&id=45">常见问题</a></dd>
+									<dd><a href="/iwebshop/index.php?controller=site&action=help&id=44">关于我们</a></dd>
+				      		</dl>
+      				</div>
+	</div>
+	<div class="footer">	<p class="links"> <a href="">关于我们</a>|<a href="">常见问题</a>|<a href="">安全交易</a>|<a href="">购买流程</a>|<a href="">如何付款</a>|<a href="">联系我们</a>|<a href="">合作提案</a> </p>	<p class="copyright">Powered by <a href="http://www.jooyea.net">iWebShop v2.1</a> 聚易信息技术有限公司</p>	Copyright © 2005-2011 <a class="copyys" target="_blank" href="http://www.miibeian.gov.cn/">鲁ICP备01000010号</a> 	</div>
+</div>
+<script type='text/javascript'>
+	//tabs的通用代码
+	(function($){
+		$(".tabs").each(function(i){
+		    var parrent = $(this);
+			$('.tabs_menu .node',this).each(function(j){
+				var current=".node:eq("+j+")";
+				$(this).bind('click',function(event){
+					$('.tabs_menu .node',parrent).removeClass('current');
+					$(this).addClass('current');
+					$('.tabs_content>.node',parrent).css('display','none');
+					$('.tabs_content>.node:eq('+j+')',parrent).css('display','block');
+				});
+			});
+		});
+	})(jQuery);
+
+	//隔行换色
+	$(".list_table tr::nth-child(even)").addClass('even');
+	$(".list_table tr").hover(
+		function () {
+			$(this).addClass("sel");
+		},
+		function () {
+			$(this).removeClass("sel");
+		}
+	);
+    //用户中心导航条
+    function menu_current()
+    {
+        var current = "index";
+        if(current == 'consult_old') current='consult';
+        else if(current == 'isevaluation') current ='evaluation';
+        else if(current == 'withdraw') current = 'account_log';
+        var tmpUrl = "/iwebshop/index.php?controller=ucenter&action=current";
+        tmpUrl = tmpUrl.replace("current",current);
+        $('div.cont ul.list li a:[href^="'+tmpUrl+'"]').parent().addClass("current");
+    }
+    menu_current();
+</script>
+<script type='text/javascript' src='/iwebshop/views/default/javascript/site.js'></script>
+<script type='text/javascript'>
+var url_head = 	encodeURIComponent('/iwebshop/');
+	$('input:text[name="word"]').bind({
+		keyup:function(){autoComplete(decodeURIComponent(url_head)+'index.php'+decodeURIComponent('%2F')+'site'+decodeURIComponent('%2F')+'autoComplete','/iwebshop/index.php?controller=site&action=search_list','1');}
+	});
+
+	//购物车div层
+	$('.mycart').hover(
+		function(){
+			showCart('/iwebshop/index.php?controller=simple&action=showCart');
+		},
+		function(){
+			$('#div_mycart').hide('slow');
+		}
+	);
+</script>
+</body>
+</html>

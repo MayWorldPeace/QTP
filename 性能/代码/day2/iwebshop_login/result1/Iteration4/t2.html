@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>用户登录_iwebshop</title>
+<link rel="stylesheet" href="/iwebshop/views/default/skin/default/css/index.css" />
+<link rel="stylesheet" type="text/css" href="/iwebshop/views/default/skin/default/jquery.bxSlider/bx_styles/bx_styles.css" />
+<script charset="UTF-8" src="/iwebshop/runtime/systemjs/jquery-1.4.4.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/iwebshop/runtime/systemjs/autovalidate/style.css"/><script charset="UTF-8" src="/iwebshop/runtime/systemjs/autovalidate/validate.js"></script>
+<script charset="UTF-8" src="/iwebshop/runtime/systemjs/form.js"></script>
+<script charset="UTF-8" src="/iwebshop/runtime/systemjs/artdialog/artDialog.min.js"></script>
+<script type='text/javascript' src="/iwebshop/views/default/javascript/common.js"></script>
+</head>
+<body class="second" >
+<div class="brand_list container_2">
+	<div class="header">
+		<h1 class="logo"><a title="iwebshop" style="background:url(/iwebshop/image/logo.gif);" href="/iwebshop/">iwebshop</a></h1>
+		<ul class="shortcut">
+			<li class="first"><a href="/iwebshop/index.php?controller=ucenter">我的账户</a></li>
+			<li><a href="/iwebshop/index.php?controller=ucenter&action=order">我的订单</a></li>
+	   		<li class='last'><a href="/iwebshop/index.php?controller=site&action=help_list">使用帮助</a></li>
+		</ul>
+				<p class="loginfo">[<a href="/iwebshop/index.php?controller=simple&action=login">登录</a>
+						<a class="reg" href="/iwebshop/index.php?controller=simple&action=reg">免费注册</a>
+				]</p>
+	</div>
+
+    
+	<div class="wrapper clearfix">
+		<div class="wrap_box">
+			<h3 class="notice">已注册用户，请登录</h3>
+			<p class="tips">欢迎来到我们的网站，如果您已是本站会员请登录</p>
+			<div class="box login_box clearfix">
+				<form action='/iwebshop/index.php?controller=simple&action=login_act' method='post'>
+															<input type="hidden" name='callback' value="">
+										<table width="515" class="form_table f_l">
+						<col width="120px" />
+						<col />
+
+						
+						<tr><th>用户名/邮箱：</th><td><input class="gray" type="text" name="login_info" value="" pattern='required' alt='填写用户名或邮箱' /></td></tr>
+						<tr><th>密码：</th><td><input class="gray" type="password" name="password" pattern='^\S{6,32}$' alt='填写密码' /></td></tr>
+						<tr class="low"><td></td>
+							<td>
+								<label class="attr"><input class="radio" type="checkbox" name="remember" value='1' />记住登录名</label>
+								<label class="attr"><a class="link pwd" href="/iwebshop/index.php?controller=simple&action=find_password">忘记密码</a></label>
+							</td>
+						</tr>
+						<tr class="low">
+							<td></td>
+							<td>
+															</td>
+						</tr>
+						<tr><td></td><td><input class="submit_login" type="submit" value="登录" /></td></tr>
+					</table>
+				</form>
+
+								<table width="360px" class="form_table prompt_3 f_l">
+					<col width="75px" />
+					<col />
+					<tr>
+						<th></th>
+						<td>
+							<p class="mt_10"><strong class="f14">您还不是<span class="orange">iwebshop</span>用户</strong></p>
+							<p>现在免费注册成为iwebshop商城用户，便能立即享受便宜又放心的购物乐趣。<a class="blue" href="/iwebshop/">网站首页>></a></p>
+														<p class="mt_10"><a class="reg_btn" href="/iwebshop/index.php?controller=simple&action=reg">注册新用户</a></p>
+													</td>
+					</tr>
+				</table>
+
+				
+			</div>
+		</div>
+	</div>
+
+	<script type='text/javascript'>
+		//多平台登录
+		function oauthlogin(oauth_id)
+		{
+			$.getJSON('/iwebshop/index.php?controller=simple&action=oauth_login',{id:oauth_id,callback:""},function(content){
+				if(content.isError == false)
+				{
+					window.location.href = content.url;
+				}
+				else
+				{
+					alert(content.message);
+				}
+			});
+		}
+
+		//下一步操作
+		function next_step()
+		{
+			var step_val = $('[name="next_step"]:checked').val();
+			if(step_val == 'acount')
+			{
+				window.location.href = '';
+			}
+			else if(step_val == 'reg')
+			{
+				window.location.href = '/iwebshop/index.php?controller=simple&action=reg';
+			}
+		}
+
+		jQuery
+		(
+			function($)
+			{
+				$(".form_table input").focus(function(){$(this).addClass('current');}).blur(function(){$(this).removeClass('current');})
+			}
+		)
+	</script>
+
+
+	<div class="footer">	<p class="links"> <a href="">关于我们</a>|<a href="">常见问题</a>|<a href="">安全交易</a>|<a href="">购买流程</a>|<a href="">如何付款</a>|<a href="">联系我们</a>|<a href="">合作提案</a> </p>	<p class="copyright">Powered by <a href="http://www.jooyea.net">iWebShop v2.1</a> 聚易信息技术有限公司</p>	Copyright © 2005-2011 <a class="copyys" target="_blank" href="http://www.miibeian.gov.cn/">鲁ICP备01000010号</a> 	</div>
+</div>
+<script type='text/javascript' src='/iwebshop/views/default/javascript/site.js'></script>
+</body>
+</html>

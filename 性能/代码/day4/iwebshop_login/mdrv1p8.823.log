@@ -1,0 +1,9 @@
+Start auto log messages stack - Iteration 1.	[MsgId: MMSG-10545]
+Action.c(4): Found resource "http://192.168.103.103:8888/iwebshop/upload/2011/05/27/20110527061035437.jpg" in HTML "http://192.168.103.103:8888/iwebshop/"  	[MsgId: MMSG-26659]
+Action.c(4): Found resource "http://192.168.103.103:8888/iwebshop/upload/2011/05/27/20110527061045466.png" in HTML "http://192.168.103.103:8888/iwebshop/"  	[MsgId: MMSG-26659]
+Action.c(4): Found resource "http://192.168.103.103:8888/iwebshop/views/default/skin/default/images/front/comment.gif" in HTML "http://192.168.103.103:8888/iwebshop/"  	[MsgId: MMSG-26659]
+Action.c(4): Found resource "http://192.168.103.103:8888/iwebshop/views/default/javascript/site.js" in HTML "http://192.168.103.103:8888/iwebshop/"  	[MsgId: MMSG-26659]
+Action.c(4): Error -27727: Step download timeout (120 seconds) has expired when downloading resource(s). Set the "Step Timeout caused by resources is a warning" Run-Time Setting to Yes/No to have this message as a warning/error, respectively  	[MsgId: MERR-27727]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+

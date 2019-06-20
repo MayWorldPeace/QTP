@@ -1,0 +1,9 @@
+GET /dicuz/upload/forum.php?mod=forumdisplay&fid=36 HTTP/1.1
+Referer: http://192.168.103.89:8181/dicuz/upload/forum.php?mod=forumdisplay&fid=37
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT)
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: Keep-Alive
+Host: 192.168.103.89:8181
+Cookie: dZca_2132_lastvisit=1515746318; dZca_2132_sid=r8MBCi; dZca_2132_lastact=1515749923%09forum.php%09forumdisplay; dZca_2132_forum_lastvisit=D_2_1515749918D_41_1515749922D_37_1515749923; dZca_2132_visitedfid=37D41D2; dZca_2132_sendmail=1
+

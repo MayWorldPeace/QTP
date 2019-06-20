@@ -1,0 +1,2 @@
+[Hosts]
+localhost=c:\perfmon1\zuoye\res\res\localhost_1.eve

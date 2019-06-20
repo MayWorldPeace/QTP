@@ -1,0 +1,130 @@
+[Network Analyzer ( d70: ed8)] ------------------------------------------------------------------------------------------
+[Network Analyzer ( d70: ed8)] Load Network Traffic Analyzers:
+[Network Analyzer ( d70: ed8)]     Analyzer Module: WPLUS (value=)
+[Network Analyzer ( d70: ed8)]     Analyzer Module: WebBase (value=GetHttpProtocolAnalyzer:api_http_filter.dll)
+[Network Analyzer ( d70: ed8)]     + Network Analyzer: api_http_filter.dll @ GetHttpProtocolAnalyzer Loaded!
+[Network Analyzer ( d70: ed8)]     + Interception Auditors: WinInetWplusInterceptionAudit:api_http_filter.dll
+[Network Analyzer ( d70: ed8)]     Analyzer Module: QTWeb (value=)
+[Network Analyzer ( d70: ed8)]     Analyzer Module: local_server (value=)
+[Network Analyzer ( d70: ed8)] ------------------------------------------------------------------------------------------
+[Network Analyzer ( d70: 4b8)] Address lookup for test = 192.168.103.143
+[Network Analyzer ( d70: 840)] Address lookup for (null) = 192.168.103.143
+[Network Analyzer ( d70: 648)] Address lookup for test = 192.168.103.143
+[Network Analyzer ( d70: 648)] Request Connection: Remote Server @ 192.168.103.143:1080   (Service=)  (Sid=  1)  PROXIED!
+[Web Request      ( d70: 4b8)] "GET /webtours"   
+[Network Analyzer ( d70: 4b8)]   (Sid:  1) Client -> Server : 312 bytes (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  1) Server -> Client : 168 bytes  (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  1) Connection Terminated (by Server)
+[Network Analyzer ( d70: 648)] Address lookup for test = 192.168.103.143
+[Network Analyzer ( d70: 648)] Request Connection: Remote Server @ 192.168.103.143:1080   (Service=)  (Sid=  2)  PROXIED!
+[Web Request      ( d70: 4b8)] "GET /webtours/"   
+[Network Analyzer ( d70: 4b8)]   (Sid:  2) Client -> Server : 313 bytes (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  2) Server -> Client : 476 bytes  (Service=HTTP)
+[Web Request      ( d70: 4b8)] "GET /webtours/header.html"   
+[Network Analyzer ( d70: 4b8)]   (Sid:  2) Client -> Server : 532 bytes (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  2) Server -> Client : 856 bytes  (Service=HTTP)
+[Web Request      ( d70: 4b8)] "GET /webtours/welcome.pl?signOff=true"   
+[Network Analyzer ( d70: 4b8)]   (Sid:  2) Client -> Server : 544 bytes (Service=HTTP)
+[Network Analyzer ( d70: 648)] Address lookup for test = 192.168.103.143
+[Network Analyzer ( d70: 648)] Request Connection: Remote Server @ 192.168.103.143:1080   (Service=)  (Sid=  3)  PROXIED!
+[Network Analyzer ( d70: 4b8)]   (Sid:  2) Server -> Client : 324 bytes  (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  2) Server -> Client : 630 bytes  (Service=HTTP)
+[Web Request      ( d70: 4b8)] "GET /webtours/images/hp_logo.png"   
+[Network Analyzer ( d70: 4b8)]   (Sid:  3) Client -> Server : 390 bytes (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  3) Server -> Client : 765 bytes  (Service=HTTP)
+[Web Request      ( d70: 4b8)] "GET /webtours/images/webtours.png"   
+[Network Analyzer ( d70: 4b8)]   (Sid:  2) Client -> Server : 391 bytes (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  2) Server -> Client : 164 bytes  (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  2) Server -> Client : 818 bytes  (Service=HTTP)
+[Web Request      ( d70: 4b8)] "GET /webtours/nav.pl?in=home"   
+[Network Analyzer ( d70: 4b8)]   (Sid:  3) Client -> Server : 586 bytes (Service=HTTP)
+[Web Request      ( d70: 4b8)] "GET /WebTours/home.html"   
+[Network Analyzer ( d70: 4b8)]   (Sid:  2) Client -> Server : 581 bytes (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  2) Server -> Client : 165 bytes  (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  2) Server -> Client : 1322 bytes  (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  3) Server -> Client : 253 bytes  (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  3) Server -> Client : 1390 bytes  (Service=HTTP)
+[Web Request      ( d70: 4b8)] "GET /WebTours/images/mer_login.gif"   
+[Network Analyzer ( d70: 4b8)]   (Sid:  2) Client -> Server : 423 bytes (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  2) Server -> Client : 164 bytes  (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  2) Server -> Client : 679 bytes  (Service=HTTP)
+[Web Request      ( d70: 4b8)] "POST /webtours/login.pl"   
+[Network Analyzer ( d70: 4b8)]   (Sid:  3) Client -> Server : 785 bytes (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  3) Server -> Client : 841 bytes  (Service=HTTP)
+[Web Request      ( d70: 4b8)] "GET /webtours/nav.pl?page=menu&in=home"   
+[Network Analyzer ( d70: 4b8)]   (Sid:  2) Client -> Server : 740 bytes (Service=HTTP)
+[Web Request      ( d70: 4b8)] "GET /webtours/login.pl?intro=true"   
+[Network Analyzer ( d70: 4b8)]   (Sid:  3) Client -> Server : 735 bytes (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  3) Server -> Client : 225 bytes  (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  2) Server -> Client : 1699 bytes  (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  3) Server -> Client : 912 bytes  (Service=HTTP)
+[Web Request      ( d70: 4b8)] "GET /WebTours/images/flights.gif"   
+[Network Analyzer ( d70: 4b8)]   (Sid:  3) Client -> Server : 590 bytes (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  3) Server -> Client : 890 bytes  (Service=HTTP)
+[Web Request      ( d70: 4b8)] "GET /WebTours/images/itinerary.gif"   
+[Network Analyzer ( d70: 4b8)]   (Sid:  2) Client -> Server : 592 bytes (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  2) Server -> Client : 164 bytes  (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  2) Server -> Client : 733 bytes  (Service=HTTP)
+[Web Request      ( d70: 4b8)] "GET /WebTours/images/in_home.gif"   
+[Network Analyzer ( d70: 4b8)]   (Sid:  3) Client -> Server : 590 bytes (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  3) Server -> Client : 852 bytes  (Service=HTTP)
+[Web Request      ( d70: 4b8)] "GET /WebTours/images/signoff.gif"   
+[Network Analyzer ( d70: 4b8)]   (Sid:  2) Client -> Server : 590 bytes (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  2) Server -> Client : 164 bytes  (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  2) Server -> Client : 751 bytes  (Service=HTTP)
+[Web Request      ( d70: 4b8)] "GET /webtours/welcome.pl?page=search"   
+[Network Analyzer ( d70: 4b8)]   (Sid:  3) Client -> Server : 754 bytes (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  3) Server -> Client : 735 bytes  (Service=HTTP)
+[Web Request      ( d70: 4b8)] "GET /webtours/reservations.pl?page=welcome"   
+[Network Analyzer ( d70: 4b8)]   (Sid:  2) Client -> Server : 758 bytes (Service=HTTP)
+[Web Request      ( d70: 4b8)] "GET /webtours/nav.pl?page=menu&in=flights"   
+[Network Analyzer ( d70: 4b8)]   (Sid:  3) Client -> Server : 757 bytes (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  3) Server -> Client : 253 bytes  (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  3) Server -> Client : 1446 bytes  (Service=HTTP)
+[Web Request      ( d70: 4b8)] "GET /WebTours/images/in_flights.gif"   
+[Network Analyzer ( d70: 4b8)]   (Sid:  3) Client -> Server : 596 bytes (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  3) Server -> Client : 164 bytes  (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  3) Server -> Client : 726 bytes  (Service=HTTP)
+[Web Request      ( d70: 4b8)] "GET /WebTours/images/home.gif"   
+[Network Analyzer ( d70: 4b8)]   (Sid:  3) Client -> Server : 590 bytes (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  3) Server -> Client : 164 bytes  (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  3) Server -> Client : 688 bytes  (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  2) Server -> Client : 253 bytes  (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  2) Server -> Client : 4182 bytes  (Service=HTTP)
+[Web Request      ( d70: 4b8)] "GET /WebTours/images/button_next.gif"   
+[Network Analyzer ( d70: 4b8)]   (Sid:  3) Client -> Server : 598 bytes (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  3) Server -> Client : 164 bytes  (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  3) Server -> Client : 758 bytes  (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  2) Client -> Server : 847 bytes (Service=HTTP)
+[Web Request      ( d70: 4b8)] "POST /webtours/reservations.pl"   
+[Network Analyzer ( d70: 4b8)]   (Sid:  2) Client -> Server : 236 bytes (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  2) Server -> Client : 253 bytes  (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  2) Server -> Client : 2352 bytes  (Service=HTTP)
+[Web Request      ( d70: 4b8)] "POST /webtours/reservations.pl"   
+[Network Analyzer ( d70: 4b8)]   (Sid:  3) Client -> Server : 977 bytes (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  3) Server -> Client : 253 bytes  (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  3) Server -> Client : 2723 bytes  (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  2) Client -> Server : 834 bytes (Service=HTTP)
+[Web Request      ( d70: 4b8)] "POST /webtours/reservations.pl"   
+[Network Analyzer ( d70: 4b8)]   (Sid:  2) Client -> Server : 343 bytes (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  2) Server -> Client : 408 bytes  (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  2) Server -> Client : 2417 bytes  (Service=HTTP)
+[Web Request      ( d70: 4b8)] "GET /WebTours/images/bookanother.gif"   
+[Network Analyzer ( d70: 4b8)]   (Sid:  3) Client -> Server : 561 bytes (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  3) Server -> Client : 164 bytes  (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  3) Server -> Client : 806 bytes  (Service=HTTP)
+[Web Request      ( d70: 4b8)] "POST /webtours/reservations.pl"   
+[Network Analyzer ( d70: 4b8)]   (Sid:  2) Client -> Server : 843 bytes (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  2) Server -> Client : 253 bytes  (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  2) Server -> Client : 4182 bytes  (Service=HTTP)
+[Web Request      ( d70: 4b8)] "GET /webtours/welcome.pl?signOff=1"   
+[Network Analyzer ( d70: 4b8)]   (Sid:  3) Client -> Server : 731 bytes (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  3) Server -> Client : 954 bytes  (Service=HTTP)
+[Web Request      ( d70: 4b8)] "GET /webtours/nav.pl?in=home"   
+[Network Analyzer ( d70: 4b8)]   (Sid:  2) Client -> Server : 583 bytes (Service=HTTP)
+[Web Request      ( d70: 4b8)] "GET /WebTours/home.html"   
+[Network Analyzer ( d70: 4b8)]   (Sid:  3) Client -> Server : 578 bytes (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  3) Server -> Client : 165 bytes  (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  3) Server -> Client : 1322 bytes  (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  2) Server -> Client : 253 bytes  (Service=HTTP)
+[Network Analyzer ( d70: 4b8)]   (Sid:  2) Server -> Client : 1391 bytes  (Service=HTTP)

@@ -1,0 +1,27 @@
+[t3]
+FileName2=t1_6_pn_post.png
+FileName5=t1_3_forum.UNK
+FileName4=t1_4_logging.UNK
+FileName7=t1_1_common.UNK
+FileName6=t1_2_style_1_common.css
+FileName8=t1_0_style_1_forum_forumdisplay.css
+RequestBodyFile=t3_RequestBody.txt
+ContentType=text/html
+URL1=http://192.168.103.89:8181/dicuz/upload/forum.php?mod=forumdisplay&fid=41
+URL2=http://192.168.103.89:8181/dicuz/upload/static/image/common/pn_post.png
+URL3=http://192.168.103.89:8181/dicuz/upload/static/image/common/logo.png
+ResponseHeaderFile=t3_ResponseHeader.txt
+URL4=http://192.168.103.89:8181/dicuz/upload/static/js/logging.js?m9g
+URL5=http://192.168.103.89:8181/dicuz/upload/static/js/forum.js?m9g
+URL6=http://192.168.103.89:8181/dicuz/upload/data/cache/style_1_common.css?m9g
+URL7=http://192.168.103.89:8181/dicuz/upload/static/js/common.js?m9g
+URL8=http://192.168.103.89:8181/dicuz/upload/data/cache/style_1_forum_forumdisplay.css?m9g
+SnapshotXmlFile=snapshot_3.xml
+RequestHeaderFile=t3_RequestHeader.txt
+SaveSnapshotResources=1
+Total=8
+StepName=Url: {fid}
+FileName1=t3.html
+FileName3=t1_5_logo.png
+[AdditionalInfo]
+IsIgnorable=0

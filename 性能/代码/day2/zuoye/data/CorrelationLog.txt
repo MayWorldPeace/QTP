@@ -1,0 +1,87 @@
+Debug Message:
+	Correlation engine instance created; using configuration Default
+
+Debug Message:
+	Rules could not be applied to http://192.168.103.143:1080/webtours
+
+Debug Message:
+	TaskID=216  URL=http://192.168.103.143:1080/webtours/
+
+Debug Message:
+	TaskID=228  URL=http://192.168.103.143:1080/webtours/header.html
+
+Debug Message:
+	TaskID=239  URL=http://192.168.103.143:1080/webtours/welcome.pl?signOff=true
+
+Debug Message:
+	TaskID=244  URL=http://192.168.103.143:1080/WebTours/home.html
+
+Debug Message:
+	TaskID=250  URL=http://192.168.103.143:1080/webtours/nav.pl?in=home
+
+Debug Message:
+	TaskID=261  URL=http://192.168.103.143:1080/webtours/login.pl
+
+Debug Message:
+	TaskID=265  URL=http://192.168.103.143:1080/webtours/nav.pl?page=menu&in=home
+
+Debug Message:
+	Rules could not be applied to http://192.168.103.143:1080/webtours/welcome.pl?page=search
+
+Debug Message:
+	Rules could not be applied to http://192.168.103.143:1080/webtours/nav.pl?page=menu&in=home
+
+Debug Message:
+	TaskID=271  URL=http://192.168.103.143:1080/webtours/welcome.pl?page=search
+
+Debug Message:
+	TaskID=274  URL=http://192.168.103.143:1080/webtours/nav.pl?page=menu&in=flights
+
+Debug Message:
+	TaskID=277  URL=http://192.168.103.143:1080/webtours/reservations.pl?page=welcome
+
+Debug Message:
+	TaskID=289  URL=http://192.168.103.143:1080/webtours/reservations.pl
+
+Debug Message:
+	Rules could not be applied to http://192.168.103.143:1080/webtours/reservations.pl
+
+Debug Message:
+	Rules could not be applied to http://192.168.103.143:1080/webtours/reservations.pl
+
+Debug Message:
+	TaskID=291  URL=http://192.168.103.143:1080/webtours/reservations.pl
+
+Debug Message:
+	Rules could not be applied to http://192.168.103.143:1080/webtours/reservations.pl
+
+Debug Message:
+	Rules could not be applied to http://192.168.103.143:1080/webtours/reservations.pl
+
+Debug Message:
+	TaskID=294  URL=http://192.168.103.143:1080/webtours/reservations.pl
+
+Debug Message:
+	Rules could not be applied to http://192.168.103.143:1080/webtours/reservations.pl
+
+Debug Message:
+	Rules could not be applied to http://192.168.103.143:1080/webtours/reservations.pl
+
+Debug Message:
+	TaskID=297  URL=http://192.168.103.143:1080/webtours/reservations.pl
+
+Debug Message:
+	Rules could not be applied to http://192.168.103.143:1080/webtours/welcome.pl?signOff=1
+
+Debug Message:
+	Rules could not be applied to http://192.168.103.143:1080/webtours/nav.pl?page=menu&in=flights
+
+Debug Message:
+	TaskID=301  URL=http://192.168.103.143:1080/webtours/welcome.pl?signOff=1
+
+Debug Message:
+	TaskID=304  URL=http://192.168.103.143:1080/WebTours/home.html
+
+Debug Message:
+	TaskID=305  URL=http://192.168.103.143:1080/webtours/nav.pl?in=home
+

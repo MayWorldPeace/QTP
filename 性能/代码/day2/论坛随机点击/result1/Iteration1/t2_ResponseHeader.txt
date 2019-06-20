@@ -1,0 +1,13 @@
+HTTP/1.1 200 OK
+Date: Fri, 12 Jan 2018 09:38:41 GMT
+Server: Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16
+X-Powered-By: PHP/5.4.16
+Set-Cookie: dZca_2132_lastact=1515749921%09forum.php%09forumdisplay; expires=Sat, 13-Jan-2018 09:38:41 GMT; path=/
+Set-Cookie: dZca_2132_forum_lastvisit=D_2_1515749918D_41_1515749921; expires=Fri, 19-Jan-2018 09:38:41 GMT; path=/
+Set-Cookie: dZca_2132_visitedfid=41D2; expires=Sun, 11-Feb-2018 09:38:41 GMT; path=/
+Set-Cookie: dZca_2132_sid=r8MBCi; expires=Sat, 13-Jan-2018 09:38:41 GMT; path=/
+Keep-Alive: timeout=5, max=94
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=gbk
+

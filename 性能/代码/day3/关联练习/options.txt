@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\perfmon1\day3\关联练习
+-IC:\Program Files\HP\LoadRunner\include
+-ec:\perfmon1\day3\关联练习\\logfile.log
+c:\perfmon1\day3\关联练习\\combined_关联练习.c
+c:\perfmon1\day3\关联练习\\pre_cci.c

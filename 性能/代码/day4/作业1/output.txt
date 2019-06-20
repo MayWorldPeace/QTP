@@ -1,0 +1,81 @@
+Virtual User Script started at : 2018-01-15 09:25:42
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 11.0.0 for WIN2003; build 8859 (Aug 18 2010 20:14:31)  	[MsgId: MMSG-27143]
+Run Mode: HTML  	[MsgId: MMSG-26000]
+Run-Time Settings file: "C:\perfmon1\day4\作业1\\default.cfg"  	[MsgId: MMSG-27141]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Starting action Action.
+Action.c(5): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(11): Detected non-resource "http://192.168.103.103:1080/webtours/header.html" in "http://192.168.103.103:1080/webtours/"  	[MsgId: MMSG-26574]
+Action.c(11): Detected non-resource "http://192.168.103.103:1080/webtours/welcome.pl?signOff=true" in "http://192.168.103.103:1080/webtours/"  	[MsgId: MMSG-26574]
+Action.c(11): Found resource "http://192.168.103.103:1080/webtours/images/hp_logo.png" in HTML "http://192.168.103.103:1080/webtours/header.html"  	[MsgId: MMSG-26659]
+Action.c(11): Found resource "http://192.168.103.103:1080/webtours/images/webtours.png" in HTML "http://192.168.103.103:1080/webtours/header.html"  	[MsgId: MMSG-26659]
+Action.c(11): Detected non-resource "http://192.168.103.103:1080/webtours/nav.pl?in=home" in "http://192.168.103.103:1080/webtours/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
+Action.c(11): Detected non-resource "http://192.168.103.103:1080/WebTours/home.html" in "http://192.168.103.103:1080/webtours/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
+Action.c(11): Notify: Saving Parameter "session = 122801.098258404zDVzfiVptQVzzzzHDHiQQptiiQf".
+Action.c(11): Found resource "http://192.168.103.103:1080/WebTours/images/mer_login.gif" in HTML "http://192.168.103.103:1080/webtours/nav.pl?in=home"  	[MsgId: MMSG-26659]
+Action.c(11): web_url("打开网站") was successful, 6448 body bytes, 1562 header bytes  	[MsgId: MMSG-26386]
+Action.c(13): Notify: Parameter Substitution: parameter "session" =  "122801.098258404zDVzfiVptQVzzzzHDHiQQptiiQf"
+Action.c(13): Notify: Parameter Substitution: parameter "user" =  "jojo"
+Action.c(13): Notify: Parameter Substitution: parameter "pwd" =  "bean"
+Action.c(13): Detected non-resource "http://192.168.103.103:1080/webtours/nav.pl?page=menu&in=home" in "http://192.168.103.103:1080/webtours/login.pl"  	[MsgId: MMSG-26574]
+Action.c(13): Detected non-resource "http://192.168.103.103:1080/webtours/login.pl?intro=true" in "http://192.168.103.103:1080/webtours/login.pl"  	[MsgId: MMSG-26574]
+Action.c(13): Found resource "http://192.168.103.103:1080/WebTours/images/flights.gif" in HTML "http://192.168.103.103:1080/webtours/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(13): Found resource "http://192.168.103.103:1080/WebTours/images/itinerary.gif" in HTML "http://192.168.103.103:1080/webtours/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(13): Found resource "http://192.168.103.103:1080/WebTours/images/in_home.gif" in HTML "http://192.168.103.103:1080/webtours/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(13): Found resource "http://192.168.103.103:1080/WebTours/images/signoff.gif" in HTML "http://192.168.103.103:1080/webtours/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(13): web_submit_data("登录") was successful, 5693 body bytes, 1538 header bytes  	[MsgId: MMSG-26386]
+Action.c(29): Notify: Parameter Substitution: parameter "pwd" =  "bean"
+Action.c(29): 读到的密码为:bean
+Action.c(30): Notify: Parameter Substitution: parameter "user" =  "jojo"
+Action.c(30): 读到的用户名为:jojo
+Action.c(32): Detected non-resource "http://192.168.103.103:1080/webtours/nav.pl?page=menu&in=flights" in "http://192.168.103.103:1080/webtours/welcome.pl?page=search"  	[MsgId: MMSG-26574]
+Action.c(32): Detected non-resource "http://192.168.103.103:1080/webtours/reservations.pl?page=welcome" in "http://192.168.103.103:1080/webtours/welcome.pl?page=search"  	[MsgId: MMSG-26574]
+Action.c(32): Found resource "http://192.168.103.103:1080/WebTours/images/in_flights.gif" in HTML "http://192.168.103.103:1080/webtours/nav.pl?page=menu&in=flights"  	[MsgId: MMSG-26659]
+Action.c(32): Resource "http://192.168.103.103:1080/WebTours/images/itinerary.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(32): Found resource "http://192.168.103.103:1080/WebTours/images/home.gif" in HTML "http://192.168.103.103:1080/webtours/nav.pl?page=menu&in=flights"  	[MsgId: MMSG-26659]
+Action.c(32): Resource "http://192.168.103.103:1080/WebTours/images/signoff.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(32): Found resource "http://192.168.103.103:1080/WebTours/images/button_next.gif" in HTML "http://192.168.103.103:1080/webtours/reservations.pl?page=welcome"  	[MsgId: MMSG-26659]
+Action.c(32): web_url("点击fights") was successful, 8360 body bytes, 1173 header bytes  	[MsgId: MMSG-26386]
+Action.c(35): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(44): Notify: Saving Parameter "fights_1 = 020;338;01/15/2018 checked ".
+Action.c(44): Notify: Saving Parameter "fights_2 = 021;301;01/15/2018".
+Action.c(44): Notify: Saving Parameter "fights_3 = 022;320;01/15/2018".
+Action.c(44): Notify: Saving Parameter "fights_4 = 023;277;01/15/2018".
+Action.c(44): Resource "http://192.168.103.103:1080/WebTours/images/button_next.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(44): Notify: Saving Parameter "fights_count = 4".
+Action.c(44): web_submit_data("web_submit_data") was successful, 2352 body bytes, 253 header bytes  	[MsgId: MMSG-26386]
+Action.c(87): Notify: Parameter Substitution: parameter "fights_1" =  "020;338;01/15/2018 checked "
+Action.c(87): Notify: Saving Parameter "bbb = 020;338;01/15/2018 checked ".
+Action.c(88): Notify: Parameter Substitution: parameter "bbb" =  "020;338;01/15/2018 checked "
+Action.c(88): Notify: Parameter Substitution: parameter "bbb" =  "020;338;01/15/2018 checked "
+Action.c(88): Resource "http://192.168.103.103:1080/WebTours/images/button_next.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(88): web_submit_data("020;338;01/15/2018 checked ") was successful, 2732 body bytes, 253 header bytes  	[MsgId: MMSG-26386]
+Action.c(87): Notify: Parameter Substitution: parameter "fights_2" =  "021;301;01/15/2018"
+Action.c(87): Notify: Saving Parameter "bbb = 021;301;01/15/2018".
+Action.c(88): Notify: Parameter Substitution: parameter "bbb" =  "021;301;01/15/2018"
+Action.c(88): Notify: Parameter Substitution: parameter "bbb" =  "021;301;01/15/2018"
+Action.c(88): Resource "http://192.168.103.103:1080/WebTours/images/button_next.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(88): web_submit_data("021;301;01/15/2018") was successful, 2723 body bytes, 253 header bytes  	[MsgId: MMSG-26386]
+Action.c(87): Notify: Parameter Substitution: parameter "fights_3" =  "022;320;01/15/2018"
+Action.c(87): Notify: Saving Parameter "bbb = 022;320;01/15/2018".
+Action.c(88): Notify: Parameter Substitution: parameter "bbb" =  "022;320;01/15/2018"
+Action.c(88): Notify: Parameter Substitution: parameter "bbb" =  "022;320;01/15/2018"
+Action.c(88): Resource "http://192.168.103.103:1080/WebTours/images/button_next.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(88): web_submit_data("022;320;01/15/2018") was successful, 2723 body bytes, 253 header bytes  	[MsgId: MMSG-26386]
+Action.c(87): Notify: Parameter Substitution: parameter "fights_4" =  "023;277;01/15/2018"
+Action.c(87): Notify: Saving Parameter "bbb = 023;277;01/15/2018".
+Action.c(88): Notify: Parameter Substitution: parameter "bbb" =  "023;277;01/15/2018"
+Action.c(88): Notify: Parameter Substitution: parameter "bbb" =  "023;277;01/15/2018"
+Action.c(88): Resource "http://192.168.103.103:1080/WebTours/images/button_next.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(88): web_submit_data("023;277;01/15/2018") was successful, 2723 body bytes, 253 header bytes  	[MsgId: MMSG-26386]
+Action.c(112): Found resource "http://192.168.103.103:1080/WebTours/images/bookanother.gif" in HTML "http://192.168.103.103:1080/webtours/reservations.pl"  	[MsgId: MMSG-26659]
+Action.c(112): web_submit_data("web_submit_data") was successful, 3222 body bytes, 572 header bytes  	[MsgId: MMSG-26386]
+Ending action Action.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

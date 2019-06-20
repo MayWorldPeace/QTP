@@ -1,0 +1,36 @@
+Failed to get information of process Id: 0
+Failed to get information of process Id: 4
+PROCESS 0x134       smss.exe
+Failed to get information of process Id: 356
+PROCESS 0x17c       winlogon.exe
+PROCESS 0x1ac       services.exe
+PROCESS 0x1b8       lsass.exe
+PROCESS 0x278       vmacthlp.exe
+PROCESS 0x298       svchost.exe
+Failed to get information of process Id: 728
+Failed to get information of process Id: 788
+Failed to get information of process Id: 824
+PROCESS 0x358       svchost.exe
+PROCESS 0x46c       explorer.exe
+PROCESS 0x4d0       vmtoolsd.exe
+PROCESS 0x4d8       ctfmon.exe
+PROCESS 0x4f8       magentproc.exe
+PROCESS 0x584       spoolsv.exe
+Failed to get information of process Id: 1440
+PROCESS 0x5f0       svchost.exe
+Failed to get information of process Id: 1592
+PROCESS 0x680       vmtoolsd.exe
+PROCESS 0x75c       svchost.exe
+PROCESS 0xc8        dllhost.exe
+Failed to get information of process Id: 952
+PROCESS 0x6f0       wuauclt.exe
+PROCESS 0x914       lrlauncherapp.exe
+PROCESS 0x9c4       conime.exe
+PROCESS 0xe90       xampp-control.exe
+PROCESS 0xec4       httpd.exe
+PROCESS 0xeb4       mysqld.exe
+PROCESS 0xf18       httpd.exe
+PROCESS 0xdc4       xigui32.exe
+PROCESS 0xe0c       vugen.exe
+Failed to get information of process Id: 7380
+Failed to get information of process Id: 7060

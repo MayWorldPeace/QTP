@@ -1,0 +1,74 @@
+[Network Analyzer (1194: e58)] ------------------------------------------------------------------------------------------
+[Network Analyzer (1194: e58)] Load Network Traffic Analyzers:
+[Network Analyzer (1194: e58)]     Analyzer Module: WPLUS (value=)
+[Network Analyzer (1194: e58)]     Analyzer Module: WebBase (value=GetHttpProtocolAnalyzer:api_http_filter.dll)
+[Network Analyzer (1194: e58)]     + Network Analyzer: api_http_filter.dll @ GetHttpProtocolAnalyzer Loaded!
+[Network Analyzer (1194: e58)]     + Interception Auditors: WinInetWplusInterceptionAudit:api_http_filter.dll
+[Network Analyzer (1194: e58)]     Analyzer Module: QTWeb (value=)
+[Network Analyzer (1194: e58)]     Analyzer Module: local_server (value=)
+[Network Analyzer (1194: e58)] ------------------------------------------------------------------------------------------
+[Network Analyzer (1194: 8c0)] Address lookup for test = 192.168.103.98
+[Network Analyzer (1194:107c)] Address lookup for (null) = 192.168.103.98
+[Network Analyzer (1194: a08)] Address lookup for test = 192.168.103.98
+[Network Analyzer (1194: a08)] Request Connection: Remote Server @ 192.168.103.98:1080   (Service=)  (Sid=  1)  PROXIED!
+[Web Request      (1194: 8c0)] "GET /webtours"   
+[Network Analyzer (1194: 8c0)]   (Sid:  1) Client -> Server : 311 bytes (Service=HTTP)
+[Network Analyzer (1194: 8c0)]   (Sid:  1) Server -> Client : 167 bytes  (Service=HTTP)
+[Network Analyzer (1194: 8c0)]   (Sid:  1) Connection Terminated (by Server)
+[Network Analyzer (1194: a08)] Address lookup for test = 192.168.103.98
+[Network Analyzer (1194: a08)] Request Connection: Remote Server @ 192.168.103.98:1080   (Service=)  (Sid=  2)  PROXIED!
+[Web Request      (1194: 8c0)] "GET /webtours/"   
+[Network Analyzer (1194: 8c0)]   (Sid:  2) Client -> Server : 312 bytes (Service=HTTP)
+[Network Analyzer (1194: 8c0)]   (Sid:  2) Server -> Client : 164 bytes  (Service=HTTP)
+[Network Analyzer (1194: 8c0)]   (Sid:  2) Server -> Client : 312 bytes  (Service=HTTP)
+[Web Request      (1194: 8c0)] "GET /webtours/welcome.pl?signOff=true"   
+[Network Analyzer (1194: 8c0)]   (Sid:  2) Client -> Server : 542 bytes (Service=HTTP)
+[Network Analyzer (1194: a08)] Address lookup for test = 192.168.103.98
+[Network Analyzer (1194: a08)] Request Connection: Remote Server @ 192.168.103.98:1080   (Service=)  (Sid=  3)  PROXIED!
+[Network Analyzer (1194: 8c0)]   (Sid:  2) Server -> Client : 324 bytes  (Service=HTTP)
+[Network Analyzer (1194: 8c0)]   (Sid:  2) Server -> Client : 630 bytes  (Service=HTTP)
+[Web Request      (1194: 8c0)] "GET /webtours/header.html"   
+[Network Analyzer (1194: 8c0)]   (Sid:  3) Client -> Server : 530 bytes (Service=HTTP)
+[Network Analyzer (1194: 8c0)]   (Sid:  3) Server -> Client : 856 bytes  (Service=HTTP)
+[Web Request      (1194: 8c0)] "GET /webtours/nav.pl?in=home"   
+[Network Analyzer (1194: 8c0)]   (Sid:  2) Client -> Server : 584 bytes (Service=HTTP)
+[Web Request      (1194: 8c0)] "GET /WebTours/home.html"   
+[Network Analyzer (1194: 8c0)]   (Sid:  3) Client -> Server : 579 bytes (Service=HTTP)
+[Network Analyzer (1194: 8c0)]   (Sid:  3) Server -> Client : 165 bytes  (Service=HTTP)
+[Network Analyzer (1194: 8c0)]   (Sid:  3) Server -> Client : 1322 bytes  (Service=HTTP)
+[Web Request      (1194: 8c0)] "GET /webtours/images/hp_logo.png"   
+[Network Analyzer (1194: 8c0)]   (Sid:  3) Client -> Server : 416 bytes (Service=HTTP)
+[Network Analyzer (1194: 8c0)]   (Sid:  3) Server -> Client : 164 bytes  (Service=HTTP)
+[Network Analyzer (1194: 8c0)]   (Sid:  3) Server -> Client : 601 bytes  (Service=HTTP)
+[Web Request      (1194: 8c0)] "GET /webtours/images/webtours.png"   
+[Network Analyzer (1194: 8c0)]   (Sid:  3) Client -> Server : 417 bytes (Service=HTTP)
+[Network Analyzer (1194: 8c0)]   (Sid:  3) Server -> Client : 982 bytes  (Service=HTTP)
+[Network Analyzer (1194: 8c0)]   (Sid:  2) Server -> Client : 253 bytes  (Service=HTTP)
+[Network Analyzer (1194: 8c0)]   (Sid:  2) Server -> Client : 1395 bytes  (Service=HTTP)
+[Web Request      (1194: 8c0)] "GET /WebTours/images/mer_login.gif"   
+[Network Analyzer (1194: 8c0)]   (Sid:  3) Client -> Server : 421 bytes (Service=HTTP)
+[Network Analyzer (1194: 8c0)]   (Sid:  3) Server -> Client : 164 bytes  (Service=HTTP)
+[Network Analyzer (1194: 8c0)]   (Sid:  3) Server -> Client : 679 bytes  (Service=HTTP)
+[Web Request      (1194: 8c0)] "POST /webtours/login.pl"   
+[Network Analyzer (1194: 8c0)]   (Sid:  2) Client -> Server : 787 bytes (Service=HTTP)
+[Network Analyzer (1194: 8c0)]   (Sid:  2) Server -> Client : 841 bytes  (Service=HTTP)
+[Web Request      (1194: 8c0)] "GET /webtours/nav.pl?page=menu&in=home"   
+[Network Analyzer (1194: 8c0)]   (Sid:  3) Client -> Server : 738 bytes (Service=HTTP)
+[Web Request      (1194: 8c0)] "GET /webtours/login.pl?intro=true"   
+[Network Analyzer (1194: 8c0)]   (Sid:  2) Client -> Server : 733 bytes (Service=HTTP)
+[Network Analyzer (1194: 8c0)]   (Sid:  3) Server -> Client : 253 bytes  (Service=HTTP)
+[Network Analyzer (1194: 8c0)]   (Sid:  2) Server -> Client : 1137 bytes  (Service=HTTP)
+[Network Analyzer (1194: 8c0)]   (Sid:  3) Server -> Client : 1446 bytes  (Service=HTTP)
+[Web Request      (1194: 8c0)] "GET /WebTours/images/flights.gif"   
+[Network Analyzer (1194: 8c0)]   (Sid:  3) Client -> Server : 588 bytes (Service=HTTP)
+[Network Analyzer (1194: 8c0)]   (Sid:  3) Server -> Client : 890 bytes  (Service=HTTP)
+[Web Request      (1194: 8c0)] "GET /WebTours/images/itinerary.gif"   
+[Network Analyzer (1194: 8c0)]   (Sid:  2) Client -> Server : 590 bytes (Service=HTTP)
+[Network Analyzer (1194: 8c0)]   (Sid:  2) Server -> Client : 164 bytes  (Service=HTTP)
+[Network Analyzer (1194: 8c0)]   (Sid:  2) Server -> Client : 733 bytes  (Service=HTTP)
+[Web Request      (1194: 8c0)] "GET /WebTours/images/in_home.gif"   
+[Network Analyzer (1194: 8c0)]   (Sid:  3) Client -> Server : 588 bytes (Service=HTTP)
+[Network Analyzer (1194: 8c0)]   (Sid:  3) Server -> Client : 852 bytes  (Service=HTTP)
+[Web Request      (1194: 8c0)] "GET /WebTours/images/signoff.gif"   
+[Network Analyzer (1194: 8c0)]   (Sid:  2) Client -> Server : 588 bytes (Service=HTTP)
+[Network Analyzer (1194: 8c0)]   (Sid:  2) Server -> Client : 915 bytes  (Service=HTTP)

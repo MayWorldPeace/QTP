@@ -1,0 +1,123 @@
+第四天：
+基本环境目录：
+	mkdir -p /data/{server,soft}
+上传软件：
+	方式1：rz
+		使用xshell终端，在命令行输入rz，选中要上传的软件
+	方式2：直接往虚拟机中拖我要上传的软件
+	
+	注意：
+		软件上传的目录是 /data/soft
+		
+nginx软件安装
+
+nginx软件安装 
+useradd www -s /sbin/nologin -M
+cd /data/soft
+tar xf nginx-1.10.2.tar.gz 
+cd nginx-1.10.2
+./configure --prefix=/data/server/nginx --user=www --group=www
+make
+make install
+
+nginx软件启动
+/data/server/nginx/sbin/nginx
+		
+mysql软件安装
+	mysql 软件安装
+cd /data/soft/
+tar xf mysql-5.6.35-linux-glibc2.5-x86_64.tar.gz -C /data/server/
+cd /data/server/
+ln -s mysql-5.6.35-linux-glibc2.5-x86_64 mysql
+useradd -s /sbin/nologin -M mysql
+/data/server/mysql/scripts/mysql_install_db --basedir=/data/server/mysql --datadir=/data/server/mysql/data/ --user=mysql
+mv /etc/my.cnf /etc/my.cnf-bak
+cp /data/server/mysql/support-files/my-default.cnf /etc/my.cnf
+cp /data/server/mysql/support-files/mysql.server /etc/init.d/mysqld
+chmod +x /etc/init.d/mysqld
+sed -i 's#/usr/local/mysql#/data/server/mysql#g' /data/server/mysql/bin/mysqld_safe /etc/init.d/mysqld
+chown -R mysql.mysql /data/server/mysql/
+/etc/init.d/mysqld start
+netstat -tnulp|grep mysqld
+	
+	配置mysql命令
+		vim /etc/profile
+		# 末尾添加这条配置
+		PATH=/data/server/mysql/bin:$PATH
+		让配置文件生效
+		source /etc/profile	
+	
+php软件安装
+	libiconv软件安装
+		cd /data/soft
+		tar zxf libiconv-1.14.tar.gz
+		cd libiconv-1.14
+		./configure --prefix=/usr/local/libiconv
+		make
+		make install
+		
+	php软件安装
+		cd /data/soft/
+		tar xf php-5.3.29.tar.gz
+		cd php-5.3.29
+		ln -s /data/server/mysql/lib/libmysqlclient.so.18  /usr/lib64/
+		touch ext/phar/phar.phar
+
+		./configure \
+		--prefix=/data/server/php-5.3.29 \
+		--with-mysql=/data/server/mysql \
+		--with-pdo-mysql=mysqlnd \
+		--with-iconv-dir=/usr/local/libiconv \
+		--with-freetype-dir \
+		--with-jpeg-dir \
+		--with-png-dir \
+		--with-zlib \
+		--with-libxml-dir=/usr \
+		--enable-xml \
+		--disable-rpath \
+		--enable-bcmath \
+		--enable-shmop \
+		--enable-sysvsem \
+		--enable-inline-optimization \
+		--with-curl \
+		--enable-mbregex \
+		--enable-fpm \
+		--enable-mbstring \
+		--with-mcrypt \
+		--with-gd \
+		--enable-gd-native-ttf \
+		--with-openssl \
+		--with-mhash \
+		--enable-pcntl \
+		--enable-sockets \
+		--with-xmlrpc \
+		--enable-zip \
+		--enable-soap \
+		--enable-short-tags \
+		--enable-static \
+		--with-xsl \
+		--with-fpm-user=www \
+		--with-fpm-group=www \
+		--enable-ftp
+
+		make
+		make install
+
+		cd /data/server
+		ln -s php-5.3.29 php
+		cd /data/server/php/etc/
+		cp php-fpm.conf.default php-fpm.conf
+
+		cd /data/soft/php-5.3.29
+		cp php.ini-production /data/server/php/lib/php.ini	
+
+	编辑配置文件
+
+		vim /data/server/php/lib/php.ini
+		原内容：
+		;session.save_path = "/tmp
+		修改后内容：
+		session.save_path = "/tmp
+		
+	启动php
+		/data/server/php/sbin/php-fpm 	

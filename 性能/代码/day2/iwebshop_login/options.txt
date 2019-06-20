@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\perfmon1\day2\iwebshop_login
+-IC:\Program Files\HP\LoadRunner\include
+-ec:\perfmon1\day2\iwebshop_login\\logfile.log
+c:\perfmon1\day2\iwebshop_login\\combined_iwebshop_login.c
+c:\perfmon1\day2\iwebshop_login\\pre_cci.c

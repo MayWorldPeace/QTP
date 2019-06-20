@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\perfmon1\day3\其他参数类型
+-IC:\Program Files\HP\LoadRunner\include
+-ec:\perfmon1\day3\其他参数类型\\logfile.log
+c:\perfmon1\day3\其他参数类型\\combined_其他参数类型.c
+c:\perfmon1\day3\其他参数类型\\pre_cci.c

@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\perfmon1\day3\webtours关联
+-IC:\Program Files\HP\LoadRunner\include
+-ec:\perfmon1\day3\webtours关联\\logfile.log
+c:\perfmon1\day3\webtours关联\\combined_webtours关联.c
+c:\perfmon1\day3\webtours关联\\pre_cci.c

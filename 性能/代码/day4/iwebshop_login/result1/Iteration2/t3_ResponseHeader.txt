@@ -1,0 +1,20 @@
+HTTP/1.1 200 OK
+Date: Mon, 15 Jan 2018 08:14:08 GMT
+Server: Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.16
+X-Powered-By: PHP/5.4.16
+Set-Cookie: iweb_safecode=c646b87121MDcwMjgwNjAwOWZhM2cxOWQxODU9YmQ1ZTgxYzBkYT84MjdhNTY0NWE2NT04MzY0N2UxN2A3MTUyOT8%2FYDY2Ng; expires=Mon, 15-Jan-2018 09:14:08 GMT; path=/
+Set-Cookie: iweb_user_id=c646b87121MDcwMjgwNjAwOWRnYjFnOGcwMWVnNzgzNGIwNWViNGszMw; expires=Mon, 15-Jan-2018 09:14:08 GMT; path=/
+Set-Cookie: iweb_safecode=c646b87121MDcwMjgwNjAwOWZhM2cxOWQxODU9YmQ1ZTgxYzBkYT84MjdhNTY0NWE2NT04MzY0N2UxN2A3MTUyOT8%2FYDY2Ng; expires=Mon, 15-Jan-2018 09:14:08 GMT; path=/
+Set-Cookie: iweb_username=c646b87121MDcwMjgwNjAwOTczYWFhMjZmMD0xYjk1OGMxMTNmZGh6aGRuZHFhbA; expires=Mon, 15-Jan-2018 09:14:08 GMT; path=/
+Set-Cookie: iweb_safecode=c646b87121MDcwMjgwNjAwOWZhM2cxOWQxODU9YmQ1ZTgxYzBkYT84MjdhNTY0NWE2NT04MzY0N2UxN2A3MTUyOT8%2FYDY2Ng; expires=Mon, 15-Jan-2018 09:14:08 GMT; path=/
+Set-Cookie: iweb_user_pwd=c646b87121MDcwMjgwNjAwOTsyNmFmZDVkNmBjZGU0ZGJgMjNmMjBlMTVhZ2EzOzQ5YGg0OWNnZGQ1NmMwNTdiMzlhPDozZA; expires=Mon, 15-Jan-2018 09:14:08 GMT; path=/
+Set-Cookie: iweb_safecode=10dced30beMDkwMDQ2NDIyMGJjOmQxOGUzODE9ZmcxZTg6ZjBmYzY4MjJpMzQ0MWI1MTc5OzU4MGQ2N2I%2BMTw2MDY5ZzQ2MA; expires=Mon, 15-Jan-2018 09:14:08 GMT; path=/
+Set-Cookie: iweb_user_id=097add5e3dMDQwMDA2MDAwMmBmZjpkP2Y4NWFiNzgzNGIyMWNrNGo7NQ; expires=Mon, 15-Jan-2018 09:14:08 GMT; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Keep-Alive: timeout=5, max=67
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html;charset=UTF-8
+

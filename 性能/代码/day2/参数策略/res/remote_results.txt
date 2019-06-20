@@ -1,0 +1,2 @@
+[Hosts]
+localhost=C:\perfmon1\day2\²ÎÊı²ßÂÔ\res\localhost_1.eve

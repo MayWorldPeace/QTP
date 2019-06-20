@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\perfmon1\day4\web_find函数
+-IC:\Program Files\HP\LoadRunner\include
+-ec:\perfmon1\day4\web_find函数\\logfile.log
+c:\perfmon1\day4\web_find函数\\combined_web_find函数.c
+c:\perfmon1\day4\web_find函数\\pre_cci.c

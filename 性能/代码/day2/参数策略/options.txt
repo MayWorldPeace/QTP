@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\perfmon1\day2\参数策略
+-IC:\Program Files\HP\LoadRunner\include
+-ec:\perfmon1\day2\参数策略\\logfile.log
+c:\perfmon1\day2\参数策略\\combined_参数策略.c
+c:\perfmon1\day2\参数策略\\pre_cci.c

@@ -1,0 +1,15 @@
+Action.c (21): illegal expression
+Action.c (21): syntax error; found `fid' expecting `)'
+Action.c (21): syntax error; found `fid' expecting `;'
+Action.c (21): undeclared identifier `fid'
+Action.c (21): syntax error; found `}' expecting `;'
+Action.c (21): illegal statement termination
+Action.c (21): skipping `,'
+Action.c (21): syntax error; found `)' expecting `;'
+Action.c (21): illegal statement termination
+Action.c (21): skipping `)'
+Action.c (24): unrecognized declaration
+Action.c (24): unrecognized declaration
+Action.c (24): warning: empty declaration
+Action.c (25): unrecognized declaration
+c:\\documents and settings\\administrator\\local settings\\temp\\noname8\\\\combined_noname8.c (5): 13 errors, not writing pre_cci.ci

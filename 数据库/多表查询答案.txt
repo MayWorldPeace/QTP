@@ -1,0 +1,195 @@
+-- 
+-- 多表查询
+-- 
+-- 1、返回拥有员工的部门名、部门号。
+-- 错误
+-- 需要员工信息和部门信息，连接emp和dept
+-- select ename,emp.deptno,dname from emp,dept 
+-- where emp.deptno=dept.deptno
+
+-- 要部门名和部门号，
+-- 拥有员工，在员工表中，有人使用这个部门号
+-- select * from dept where deptno in(select DISTINCT deptno from emp )
+
+
+-- 
+-- 2、工资水平多于‘鲁班七号’的员工信息。
+-- 要员工信息，查员工表
+-- 条件，工资多余鲁班七号
+-- 查询鲁班七号的工资
+-- select * from emp where sal>(select sal from emp where ename='鲁班七号')
+
+--     
+-- 3、返回员工和所属上级的姓名。
+-- select e.ename eename,e.job ejob,m.ename mename,m.job mjob,m.mgr mmgr from emp e,emp m
+-- where e.mgr=m.empno
+-- 一个表中有自己的id，和上级的id，使用自关联
+select ee.ename eename ,ee.job eejob,mm.ename mmname,mm.job mmjob,pp.ename ppname,pp.job ppjob
+from emp ee ,emp mm,emp pp
+where ee.mgr=mm.empno and mm.mgr=pp.empno
+and (mm.job='经理' or pp.job='经理')
+--      
+-- 4、返回雇员的雇佣日期早于其上级雇佣日期的员工及其上级姓名。
+-- select e.ename ename,e.job ejob,e.HIREDATE,m.ename mename,m.job mjob,m.HIREDATE
+--  from emp e,emp m where e.mgr=m.EMPNO and e.HIREDATE<m.HIREDATE
+-- where e.mgr=m.empno
+-- 
+-- 5、返回员工姓名及其所在的部门名称。
+
+-- select ename,emp.deptno,dname from emp,dept 
+-- WHERE emp.deptno=dept.deptno
+
+
+-- 
+-- 6、返回从事'职员'工作的员工姓名和所在部门名称。
+-- 查询员工和部门的信息，连接emp和dept
+-- 过滤职员
+
+-- select ename,emp.deptno,dname,job from emp,dept 
+-- WHERE emp.deptno=dept.deptno and job='职员'
+-- 
+-- 
+-- 7、返回部门号,部门名称及其本部门的最低工资。
+--  查询员工和部门的信息，连接emp和dept
+-- 各部门的最低工资，按照部门进行分组，分组后求最低工资
+-- select dept.DEPTNO,dept.DNAME,min(sal) from emp,dept 
+-- WHERE emp.deptno=dept.deptno
+-- group by dept.deptno
+-- 
+-- 8、返回销售部所有员工的姓名。
+-- 销售部所有员工，连接dept,emp
+-- select * from emp,dept 
+-- WHERE emp.deptno=dept.deptno
+-- and dept.dname='销售'
+-- 
+-- 
+-- 9、返回工资水平多于平均工资的员工。
+-- 查询emp
+-- 条件:工资水平多于平均工资
+-- 查询平均工资
+-- select avg(sal) from emp
+-- select * from emp where sal>(select avg(sal) from emp)
+-- 
+-- 
+-- 10、返回与‘大乔’从事相同工作的员工，不包含自己
+-- 查询emp
+-- 条件：与‘大乔’从事相同工作,
+-- select job from emp where ename='大乔'
+-- 不包含自己
+-- select * from emp where job=(select job from emp where ename='大乔')
+-- and ename!='大乔'
+-- 
+-- 
+-- 11、返回与销售部门员工工资水平相同的员工姓名与工资。
+-- 销售部的员工，连接emp，dept
+-- select * from emp ,dept
+-- 条件：与销售部门员工工资水平相同
+-- 查询销售部所有人的工资
+-- select sal from emp ,dept where emp.deptno=dept.deptno and dname='销售'
+
+-- select * from emp ,dept where emp.deptno=dept.deptno
+-- and sal in (select sal from emp ,dept where emp.deptno=dept.deptno and dname='销售')
+-- 
+-- 
+-- 12、返回工资高于销售部门所有员工工资水平的员工信息。
+
+-- 高于销售部门所有，工资大于销售部所有人的工资
+-- select * from emp ,dept where emp.deptno=dept.deptno
+-- and sal >all (select sal from emp ,dept where emp.deptno=dept.deptno and dname='销售')
+
+-- 
+-- 
+-- 13、返回部门号、部门名、部门所在位置及其每个部门的员工总数。  
+-- 连接emp，dept
+-- select * from emp,dept where emp.deptno=dept.deptno  
+-- 每个部门的员工总数：统计，聚合函数，每个部门，需要分组
+-- select *,count(*) from emp,dept where emp.deptno=dept.deptno
+-- group by dept.DEPTNO
+-- 
+-- 
+-- 14、返回员工的姓名、所在部门名及其工资。
+-- 连接emp,dept
+-- select * from emp,dept where emp.deptno=dept.deptno
+
+-- 
+-- 
+-- 15、返回员工的详细信息。(包括部门名和工资级别)
+-- 连接emp,dept,salgrade
+-- 员工工资级别获取：员工的工资 在某个级别的最低工资和最高范围内
+
+-- select * from emp,dept,salgrade s
+-- where emp.deptno=dept.deptno
+-- and emp.sal between s.losal and  s.hisal
+
+
+-- 
+-- 
+-- 16、返回员工工作及其从事此工作的最低工资。
+-- 
+-- 员工工作及工资,查询员工表
+-- select * from emp
+-- 此工作的最低工资，按照工作分组
+-- select job,min(sal) from emp group by job
+
+-- 返回员工名称，员工工作及其从事此工作的最低工资
+-- 获取每个工作中的最低工资，结果1
+-- 需要关联员工表和结果1
+
+-- select ename,emp.job,sal 自己的工资,t.msal 当前工作的最低工资
+-- from emp ,(select job,min(sal) msal from emp group by job) t
+-- where emp.job=t.job
+-- 
+-- 
+-- 17、返回每个部门中经理的最低工资。
+-- 分组后，取到的时这个组中的一条数据，通常是按照主键排序后的第一条
+-- 分组前，先对数据按照最低工资进行排序
+-- select * from emp order by sal
+
+-- 按照什么分组，取每组最新的数据
+-- select count(*),t.ename,min(t.sal) from 
+-- (select * from emp order by sal) t 
+--  where t.job='经理' group by t.deptno
+
+-- 
+-- 
+-- 18、计算出员工的年薪，并且以年薪排序。
+-- select ifnull(null,2) 如果前面一个值为null，取后面的值，如果不为null，取自己的值
+-- select sal*12 ysal,comm,sal*12+ifnull(comm,0)  from emp order by ysal;
+-- 
+-- 
+-- 19、返回工资处于第四级别的员工的姓名。
+-- 
+-- 连接emp,salgrade
+-- select * from emp,salgrade
+-- where sal between losal and hisal 
+-- and grade='4'
+-- 
+-- 
+-- 20、返回工资为二等级的职员名字、部门所在地、二等级员工工资的最低工资和最高工资
+-- 连接emp,salgrade ，dept
+-- select * from emp,salgrade,dept
+-- where sal between losal and hisal 
+-- and emp.deptno=dept.deptno
+-- and grade=2
+-- 
+-- 
+-- 21、工资等级多于‘王昭君’的员工信息。
+-- 连接emp,salgrade
+-- 获取王昭君的等级
+-- select grade from emp,salgrade
+-- where sal between losal and hisal 
+-- and ename='王昭君'
+-- 连接emp,salgrade,获取所有员工的信息和等级
+select * from emp,salgrade
+where sal between losal and hisal 
+-- 等级多于‘王昭君’
+and GRADE >(select grade from emp,salgrade
+where sal between losal and hisal 
+and ename='王昭君') 
+
+select 
+from 
+WHERE
+GROUP BY
+order BY
+limit

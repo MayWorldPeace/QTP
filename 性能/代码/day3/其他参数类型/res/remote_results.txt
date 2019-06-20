@@ -1,0 +1,2 @@
+[Hosts]
+localhost=C:\perfmon1\day3\其他参数类型\res\localhost_1.eve

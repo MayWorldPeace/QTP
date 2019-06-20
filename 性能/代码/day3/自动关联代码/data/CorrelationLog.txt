@@ -1,0 +1,43 @@
+Debug Message:
+	Correlation engine instance created; using configuration Default
+
+Debug Message:
+	Rules could not be applied to http://192.168.103.98:1080/webtours
+
+Debug Message:
+	TaskID=477  URL=http://192.168.103.98:1080/webtours/
+
+Debug Message:
+	TaskID=498  URL=http://192.168.103.98:1080/webtours/welcome.pl?signOff=true
+
+Debug Message:
+	TaskID=499  URL=http://192.168.103.98:1080/webtours/header.html
+
+Debug Message:
+	TaskID=503  URL=http://192.168.103.98:1080/WebTours/home.html
+
+Debug Message:
+	TaskID=512  URL=http://192.168.103.98:1080/webtours/nav.pl?in=home
+
+Debug Message:
+	Rules could not be applied to http://192.168.103.98:1080/webtours/login.pl
+
+Creating parameter {WCSParam2}:
+	SourceTaskID   = "512"
+	TargetTaskID   = "522"
+	Rule type      = "2"
+	Rule name      = "Rule_5"
+	TargetType     = "1"
+	TargetTypeInfo = ""
+	ReplacedValue  = "122796.104414743zDVzDctpzcAiDDDDDHiQHpQtHHcf"
+	ReplacePos     = "0"
+
+Debug Message:
+	Rules could not be applied to http://192.168.103.98:1080/webtours/nav.pl?in=home
+
+Debug Message:
+	TaskID=522  URL=http://192.168.103.98:1080/webtours/login.pl
+
+Debug Message:
+	TaskID=525  URL=http://192.168.103.98:1080/webtours/nav.pl?page=menu&in=home
+

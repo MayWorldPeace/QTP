@@ -1,0 +1,934 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>查询演练 | 数据库 MySQL</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../../chapter5.html" />
+    
+    
+    <link rel="prev" href="../../chapter4/4/8.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="4.3.9"
+        data-chapter-title="查询演练"
+        data-filepath="chapter4/4/9.md"
+        data-basepath="../.."
+        data-revision="Tue Nov 21 2017 08:26:22 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        数据库简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="chapter1.html">
+            
+                
+                    <a href="../../chapter1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        基本概念
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="chapter1/1.html">
+            
+                
+                    <a href="../../chapter1/1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        数据库是什么
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter1/2.html">
+            
+                
+                    <a href="../../chapter1/2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        RDBMS
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="chapter1/3.html">
+            
+                
+                    <a href="../../chapter1/3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        SQL
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="chapter1/4.html">
+            
+                
+                    <a href="../../chapter1/4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        MySQL
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="chapter2.html">
+            
+                
+                    <a href="../../chapter2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        MySQL安装与使用
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="chapter2/1.html">
+            
+                
+                    <a href="../../chapter2/1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Linux平台
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="chapter2/2.html">
+            
+                
+                    <a href="../../chapter2/2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Windows平台
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="chapter2/3.html">
+            
+                
+                    <a href="../../chapter2/3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        客户端与服务端搭配场景
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="chapter3.html">
+            
+                
+                    <a href="../../chapter3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Navicat使用
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="chapter3/1.html">
+            
+                
+                    <a href="../../chapter3/1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        数据库操作
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="chapter3/2.html">
+            
+                
+                    <a href="../../chapter3/2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        数据表操作
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="chapter3/3.html">
+            
+                
+                    <a href="../../chapter3/3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        数据操作-增删改查
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="chapter3/4.html">
+            
+                
+                    <a href="../../chapter3/4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        数据类型与约束
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="chapter3/5.html">
+            
+                
+                    <a href="../../chapter3/5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        数据库的备份与恢复
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="chapter4.html">
+            
+                
+                    <a href="../../chapter4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        SQL语言
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="chapter4/2.html">
+            
+                
+                    <a href="../../chapter4/2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        数据表操作
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="chapter4/3.html">
+            
+                
+                    <a href="../../chapter4/3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        数据操作-增删改查
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="chapter4/4.html">
+            
+                
+                    <a href="../../chapter4/4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        数据操作-查询
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.3.1" data-path="chapter4/4/1.html">
+            
+                
+                    <a href="../../chapter4/4/1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.1.</b>
+                        
+                        条件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.2" data-path="chapter4/4/2.html">
+            
+                
+                    <a href="../../chapter4/4/2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.2.</b>
+                        
+                        排序
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.3" data-path="chapter4/4/3.html">
+            
+                
+                    <a href="../../chapter4/4/3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.3.</b>
+                        
+                        聚合函数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.4" data-path="chapter4/4/4.html">
+            
+                
+                    <a href="../../chapter4/4/4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.4.</b>
+                        
+                        分组
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.5" data-path="chapter4/4/5.html">
+            
+                
+                    <a href="../../chapter4/4/5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.5.</b>
+                        
+                        分页
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.6" data-path="chapter4/4/6.html">
+            
+                
+                    <a href="../../chapter4/4/6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.6.</b>
+                        
+                        连接查询
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.7" data-path="chapter4/4/7.html">
+            
+                
+                    <a href="../../chapter4/4/7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.7.</b>
+                        
+                        自关联
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.8" data-path="chapter4/4/8.html">
+            
+                
+                    <a href="../../chapter4/4/8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.8.</b>
+                        
+                        子查询
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.3.9" data-path="chapter4/4/9.html">
+            
+                
+                    <a href="../../chapter4/4/9.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.9.</b>
+                        
+                        查询演练
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="chapter5.html">
+            
+                
+                    <a href="../../chapter5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        高级
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="chapter5/6.html">
+            
+                
+                    <a href="../../chapter5/6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        数据库设计
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="chapter5/7.html">
+            
+                
+                    <a href="../../chapter5/7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        命令行客户端
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="chapter5/1.html">
+            
+                
+                    <a href="../../chapter5/1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        函数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="chapter5/2.html">
+            
+                
+                    <a href="../../chapter5/2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        存储过程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="chapter5/3.html">
+            
+                
+                    <a href="../../chapter5/3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        视图
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="chapter5/4.html">
+            
+                
+                    <a href="../../chapter5/4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        事务
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.6.1" data-path="chapter5/4/1.html">
+            
+                
+                    <a href="../../chapter5/4/1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.1.</b>
+                        
+                        提交
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6.2" data-path="chapter5/4/2.html">
+            
+                
+                    <a href="../../chapter5/4/2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.2.</b>
+                        
+                        回滚
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="chapter5/5.html">
+            
+                
+                    <a href="../../chapter5/5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        索引
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="chapter5/wai-jian.html">
+            
+                
+                    <a href="../../chapter5/wai-jian.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        外键
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="chapter5/yong-hu-mi-ma.html">
+            
+                
+                    <a href="../../chapter5/yong-hu-mi-ma.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.9.</b>
+                        
+                        用户密码
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >数据库 MySQL</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x51C6;&#x5907;&#x6570;&#x636E;">&#x51C6;&#x5907;&#x6570;&#x636E;</h1>
+<pre><code>create table goods(
+    id int unsigned primary key auto_increment,
+    name varchar(150),
+    cate varchar(40),
+    brand_name varchar(40),
+    price decimal(10,3) default 0,
+    is_show bit default 1,
+    is_saleoff bit default 0
+);
+insert into goods values(0,&apos;r510vc 15.6&#x82F1;&#x5BF8;&#x7B14;&#x8BB0;&#x672C;&apos;,&apos;&#x7B14;&#x8BB0;&#x672C;&apos;,&apos;&#x534E;&#x7855;&apos;,&apos;3399&apos;,default,default); 
+insert into goods values(0,&apos;y400n 14.0&#x82F1;&#x5BF8;&#x7B14;&#x8BB0;&#x672C;&#x7535;&#x8111;&apos;,&apos;&#x7B14;&#x8BB0;&#x672C;&apos;,&apos;&#x8054;&#x60F3;&apos;,&apos;4999&apos;,default,default);
+insert into goods values(0,&apos;g150th 15.6&#x82F1;&#x5BF8;&#x6E38;&#x620F;&#x672C;&apos;,&apos;&#x6E38;&#x620F;&#x672C;&apos;,&apos;&#x96F7;&#x795E;&apos;,&apos;8499&apos;,default,default); 
+insert into goods values(0,&apos;x550cc 15.6&#x82F1;&#x5BF8;&#x7B14;&#x8BB0;&#x672C;&apos;,&apos;&#x7B14;&#x8BB0;&#x672C;&apos;,&apos;&#x534E;&#x7855;&apos;,&apos;2799&apos;,default,default); 
+insert into goods values(0,&apos;x240 &#x8D85;&#x6781;&#x672C;&apos;,&apos;&#x8D85;&#x7EA7;&#x672C;&apos;,&apos;&#x8054;&#x60F3;&apos;,&apos;4999&apos;,default,default); 
+insert into goods values(0,&apos;u330p 13.3&#x82F1;&#x5BF8;&#x8D85;&#x6781;&#x672C;&apos;,&apos;&#x8D85;&#x7EA7;&#x672C;&apos;,&apos;&#x8054;&#x60F3;&apos;,&apos;4299&apos;,default,default); 
+insert into goods values(0,&apos;svp13226scb &#x89E6;&#x63A7;&#x8D85;&#x6781;&#x672C;&apos;,&apos;&#x8D85;&#x7EA7;&#x672C;&apos;,&apos;&#x7D22;&#x5C3C;&apos;,&apos;7999&apos;,default,default); 
+insert into goods values(0,&apos;ipad mini 7.9&#x82F1;&#x5BF8;&#x5E73;&#x677F;&#x7535;&#x8111;&apos;,&apos;&#x5E73;&#x677F;&#x7535;&#x8111;&apos;,&apos;&#x82F9;&#x679C;&apos;,&apos;1998&apos;,default,default);
+insert into goods values(0,&apos;ipad air 9.7&#x82F1;&#x5BF8;&#x5E73;&#x677F;&#x7535;&#x8111;&apos;,&apos;&#x5E73;&#x677F;&#x7535;&#x8111;&apos;,&apos;&#x82F9;&#x679C;&apos;,&apos;3388&apos;,default,default); 
+insert into goods values(0,&apos;ipad mini &#x914D;&#x5907; retina &#x663E;&#x793A;&#x5C4F;&apos;,&apos;&#x5E73;&#x677F;&#x7535;&#x8111;&apos;,&apos;&#x82F9;&#x679C;&apos;,&apos;2788&apos;,default,default); 
+insert into goods values(0,&apos;ideacentre c340 20&#x82F1;&#x5BF8;&#x4E00;&#x4F53;&#x7535;&#x8111; &apos;,&apos;&#x53F0;&#x5F0F;&#x673A;&apos;,&apos;&#x8054;&#x60F3;&apos;,&apos;3499&apos;,default,default); 
+insert into goods values(0,&apos;vostro 3800-r1206 &#x53F0;&#x5F0F;&#x7535;&#x8111;&apos;,&apos;&#x53F0;&#x5F0F;&#x673A;&apos;,&apos;&#x6234;&#x5C14;&apos;,&apos;2899&apos;,default,default); 
+insert into goods values(0,&apos;imac me086ch/a 21.5&#x82F1;&#x5BF8;&#x4E00;&#x4F53;&#x7535;&#x8111;&apos;,&apos;&#x53F0;&#x5F0F;&#x673A;&apos;,&apos;&#x82F9;&#x679C;&apos;,&apos;9188&apos;,default,default); 
+insert into goods values(0,&apos;at7-7414lp &#x53F0;&#x5F0F;&#x7535;&#x8111; linux &#xFF09;&apos;,&apos;&#x53F0;&#x5F0F;&#x673A;&apos;,&apos;&#x5B8F;&#x7881;&apos;,&apos;3699&apos;,default,default); 
+insert into goods values(0,&apos;z220sff f4f06pa&#x5DE5;&#x4F5C;&#x7AD9;&apos;,&apos;&#x670D;&#x52A1;&#x5668;/&#x5DE5;&#x4F5C;&#x7AD9;&apos;,&apos;&#x60E0;&#x666E;&apos;,&apos;4288&apos;,default,default); 
+insert into goods values(0,&apos;poweredge ii&#x670D;&#x52A1;&#x5668;&apos;,&apos;&#x670D;&#x52A1;&#x5668;/&#x5DE5;&#x4F5C;&#x7AD9;&apos;,&apos;&#x6234;&#x5C14;&apos;,&apos;5388&apos;,default,default); 
+insert into goods values(0,&apos;mac pro&#x4E13;&#x4E1A;&#x7EA7;&#x53F0;&#x5F0F;&#x7535;&#x8111;&apos;,&apos;&#x670D;&#x52A1;&#x5668;/&#x5DE5;&#x4F5C;&#x7AD9;&apos;,&apos;&#x82F9;&#x679C;&apos;,&apos;28888&apos;,default,default); 
+insert into goods values(0,&apos;hmz-t3w &#x5934;&#x6234;&#x663E;&#x793A;&#x8BBE;&#x5907;&apos;,&apos;&#x7B14;&#x8BB0;&#x672C;&#x914D;&#x4EF6;&apos;,&apos;&#x7D22;&#x5C3C;&apos;,&apos;6999&apos;,default,default); 
+insert into goods values(0,&apos;&#x5546;&#x52A1;&#x53CC;&#x80A9;&#x80CC;&#x5305;&apos;,&apos;&#x7B14;&#x8BB0;&#x672C;&#x914D;&#x4EF6;&apos;,&apos;&#x7D22;&#x5C3C;&apos;,&apos;99&apos;,default,default); 
+insert into goods values(0,&apos;x3250 m4&#x673A;&#x67B6;&#x5F0F;&#x670D;&#x52A1;&#x5668;&apos;,&apos;&#x670D;&#x52A1;&#x5668;/&#x5DE5;&#x4F5C;&#x7AD9;&apos;,&apos;ibm&apos;,&apos;6888&apos;,default,default); 
+insert into goods values(0,&apos;hmz-t3w &#x5934;&#x6234;&#x663E;&#x793A;&#x8BBE;&#x5907;&apos;,&apos;&#x7B14;&#x8BB0;&#x672C;&#x914D;&#x4EF6;&apos;,&apos;&#x7D22;&#x5C3C;&apos;,&apos;6999&apos;,default,default); 
+insert into goods values(0,&apos;&#x5546;&#x52A1;&#x53CC;&#x80A9;&#x80CC;&#x5305;&apos;,&apos;&#x7B14;&#x8BB0;&#x672C;&#x914D;&#x4EF6;&apos;,&apos;&#x7D22;&#x5C3C;&apos;,&apos;99&apos;,default,default);
+</code></pre><h3 id="&#x67E5;&#x8BE2;&#x6F14;&#x7EC3;">&#x67E5;&#x8BE2;&#x6F14;&#x7EC3; </h3>
+<blockquote>
+<p>&#x6C42;&#x6240;&#x6709;&#x7535;&#x8111;&#x4EA7;&#x54C1;&#x7684;&#x5E73;&#x5747;&#x4EF7;&#x683C;,&#x5E76;&#x4E14;&#x4FDD;&#x7559;&#x4E24;&#x4F4D;&#x5C0F;&#x6570;</p>
+</blockquote>
+<pre><code>select round(avg(price),2) as avg_price from goods;
+</code></pre><blockquote>
+<p>&#x67E5;&#x8BE2;&#x6240;&#x6709;&#x4EF7;&#x683C;&#x5927;&#x4E8E;&#x5E73;&#x5747;&#x4EF7;&#x683C;&#x7684;&#x5546;&#x54C1;&#xFF0C;&#x5E76;&#x4E14;&#x6309;&#x4EF7;&#x683C;&#x964D;&#x5E8F;&#x6392;&#x5E8F;</p>
+</blockquote>
+<pre><code>select id,name,price from goods 
+where price &gt; (select round(avg(price),2) as avg_price from goods) 
+order by price desc;
+</code></pre><blockquote>
+<p>&#x67E5;&#x8BE2;&#x7C7B;&#x578B;&#x4E3A;&apos;&#x8D85;&#x6781;&#x672C;&apos;&#x7684;&#x5546;&#x54C1;&#x4EF7;&#x683C;</p>
+</blockquote>
+<pre><code>select price from goods where cate = &apos;&#x8D85;&#x7EA7;&#x672C;&apos;;
+</code></pre><blockquote>
+<p>&#x67E5;&#x8BE2;&#x4EF7;&#x683C;&#x5927;&#x4E8E;&#x6216;&#x7B49;&#x4E8E;&quot;&#x8D85;&#x7EA7;&#x672C;&quot;&#x4EF7;&#x683C;&#x7684;&#x5546;&#x54C1;&#xFF0C;&#x5E76;&#x4E14;&#x6309;&#x4EF7;&#x683C;&#x964D;&#x5E8F;&#x6392;&#x5217;</p>
+</blockquote>
+<pre><code>select id,name,price from goods 
+where price = any(select price from goods where cate = &apos;&#x8D85;&#x7EA7;&#x672C;&apos;)
+order by price desc;
+</code></pre><blockquote>
+<p>= any &#x6216;&#x8005; =some &#x7B49;&#x4EF7; in</p>
+</blockquote>
+<pre><code>select id,name,price from goods 
+where price in (select price from goods where cate = &apos;&#x8D85;&#x7EA7;&#x672C;&apos;)
+order by price desc;
+</code></pre><blockquote>
+<p>!=all &#x7B49;&#x4EF7;&#x4E8E; not in</p>
+</blockquote>
+<pre><code>select id,name,price from goods 
+where price not in (select price from goods where cate = &apos;&#x8D85;&#x7EA7;&#x672C;&apos;)
+order by price desc;
+</code></pre><h3 id="&#x6570;&#x636E;&#x5206;&#x8868;">&#x6570;&#x636E;&#x5206;&#x8868; </h3>
+<blockquote>
+<p>&#x521B;&#x5EFA;&#x201C;&#x5546;&#x54C1;&#x5206;&#x7C7B;&#x201D;&#x8868;</p>
+</blockquote>
+<pre><code>create table if not exists goods_cates(
+    cate_id int unsigned primary key auto_increment,
+    cate_name varchar(40)
+);
+</code></pre><blockquote>
+<p>&#x67E5;&#x8BE2;goods&#x8868;&#x7684;&#x6240;&#x6709;&#x8BB0;&#x5F55;&#xFF0C;&#x5E76;&#x4E14;&#x6309;&quot;&#x7C7B;&#x522B;&quot;&#x5206;&#x7EC4;</p>
+</blockquote>
+<pre><code>select cate from goods group by cate;
+</code></pre><blockquote>
+<p>&#x5C06;&#x5206;&#x7EC4;&#x7ED3;&#x679C;&#x5199;&#x5165;&#x5230;goods_cates&#x6570;&#x636E;&#x8868;</p>
+</blockquote>
+<pre><code>insert into goods_cates (cate_name) select cate from goods group by cate;
+</code></pre><blockquote>
+<p>&#x901A;&#x8FC7;goods_cates&#x6570;&#x636E;&#x8868;&#x6765;&#x66F4;&#x65B0;goods&#x8868;</p>
+</blockquote>
+<pre><code>update goods as g inner join goods_cates as c on g.cate = c.cate_name 
+set cate = cate_id;
+</code></pre><blockquote>
+<p>&#x901A;&#x8FC7;create...select&#x6765;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868;&#x5E76;&#x4E14;&#x540C;&#x65F6;&#x5199;&#x5165;&#x8BB0;&#x5F55;,&#x4E00;&#x6B65;&#x5230;&#x4F4D;</p>
+</blockquote>
+<pre><code>create table goods_brands (
+    brand_id int unsigned primary key auto_increment,
+    brand_name varchar(40)) select brand_name from goods group by brand_name;
+</code></pre><blockquote>
+<p>&#x901A;&#x8FC7;goods_brands&#x6570;&#x636E;&#x8868;&#x6765;&#x66F4;&#x65B0;goods&#x6570;&#x636E;&#x8868;</p>
+</blockquote>
+<pre><code>update goods as g inner join goods_brands as b on g.brand_name = b.brand_name
+set g.brand_name = b.brand_id;
+</code></pre><blockquote>
+<p>&#x67E5;&#x770B; goods &#x7684;&#x6570;&#x636E;&#x8868;&#x7ED3;&#x6784;,&#x4F1A;&#x53D1;&#x73B0; cate &#x548C; brand_name&#x5BF9;&#x5E94;&#x7684;&#x7C7B;&#x578B;&#x4E3A; varchar &#x4F46;&#x662F;&#x5B58;&#x50A8;&#x7684;&#x90FD;&#x662F;&#x5B57;&#x7B26;&#x4E32;</p>
+<p>&#x4FEE;&#x6539;&#x6570;&#x636E;&#x8868;&#x7ED3;&#x6784;&#xFF0C;&#x628A;cate&#x5B57;&#x6BB5;&#x6539;&#x4E3A;cate_id&#x4E14;&#x7C7B;&#x578B;&#x4E3A;int unsigned&#xFF0C;&#x628A;brand_name&#x5B57;&#x6BB5;&#x6539;&#x4E3A;brand_id&#x4E14;&#x7C7B;&#x578B;&#x4E3A;int unsigned</p>
+<p>&#x5206;&#x522B;&#x5728; good_s<em>cates &#x548C; goods</em>_brands&#x8868;&#x4E2D;&#x63D2;&#x5165;&#x8BB0;&#x5F55;</p>
+</blockquote>
+<pre><code>insert into goods_cates(cate_name) values (&apos;&#x8DEF;&#x7531;&#x5668;&apos;),(&apos;&#x4EA4;&#x6362;&#x673A;&apos;),(&apos;&#x7F51;&#x5361;&apos;);
+insert into goods_brands(brand_name) values (&apos;&#x6D77;&#x5C14;&apos;),(&apos;&#x6E05;&#x534E;&#x540C;&#x65B9;&apos;),(&apos;&#x795E;&#x821F;&apos;);
+</code></pre><blockquote>
+<p>&#x5728; goods &#x6570;&#x636E;&#x8868;&#x4E2D;&#x5199;&#x5165;&#x4EFB;&#x610F;&#x8BB0;&#x5F55;</p>
+</blockquote>
+<pre><code>insert into goods (name,cate_id,brand_id,price)
+values(&apos;LaserJet Pro P1606dn &#x9ED1;&#x767D;&#x6FC0;&#x5149;&#x6253;&#x5370;&#x673A;&apos;,&apos;12&apos;,&apos;4&apos;,&apos;1849&apos;);
+</code></pre><blockquote>
+<p>&#x67E5;&#x8BE2;&#x6240;&#x6709;&#x5546;&#x54C1;&#x7684;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F; (&#x901A;&#x8FC7;&#x5185;&#x8FDE;&#x63A5;)</p>
+</blockquote>
+<pre><code>select id,name,cate_name,brand_name,price from goods as g
+inner join goods_cates as c on g.cate_id = c.cate_id
+inner join goods_brands as b on g.brand_id = b.brand_id;
+</code></pre><blockquote>
+<p>&#x67E5;&#x8BE2;&#x6240;&#x6709;&#x5546;&#x54C1;&#x7684;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F; (&#x901A;&#x8FC7;&#x5DE6;&#x8FDE;&#x63A5;)</p>
+</blockquote>
+<pre><code>select id,name,cate_name,brand_name,price from goods as g
+left join goods_cates as c on g.cate_id = c.cate_id
+left join goods_brands as b on g.brand_id = b.brand_id;
+</code></pre><blockquote>
+<p>&#x67E5;&#x8BE2;&#x6240;&#x6709;&#x5546;&#x54C1;&#x7684;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F; (&#x901A;&#x8FC7;&#x53F3;&#x8FDE;&#x63A5;)</p>
+</blockquote>
+<pre><code>select id,name,cate_name,brand_name,price from goods as g
+right join goods_cates as c on g.cate_id = c.cate_id
+right join goods_brands as b on g.brand_id = b.brand_id;
+</code></pre>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../chapter4/4/8.html" class="navigation navigation-prev " aria-label="Previous page: 子查询"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../chapter5.html" class="navigation navigation-next " aria-label="Next page: 高级"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../gitbook/app.js"></script>
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
